@@ -1,5 +1,5 @@
 .intro {
-  margin-top: 80px;
+  margin-top: 80rem;
 
   > div {
     position: absolute;
@@ -11,8 +11,8 @@
 
   .sky {
     z-index: -5;
-    transform: translate3d(0, 0, -5px);
-    -webkit-transform: translate3d(0, 0, -5px);
+    transform: translate3d(0, 0, -5rem);
+    -webkit-transform: translate3d(0, 0, -5rem);
     background: linear-gradient(
       180deg,
       #8bd1f3 0%,
@@ -23,22 +23,22 @@
 
   .islands {
     z-index: -4;
-    transform: translate3d(0, 0, -4px);
-    -webkit-transform: translate3d(0, 0, -4px);
+    transform: translate3d(0, 0, -4rem);
+    -webkit-transform: translate3d(0, 0, -4rem);
 
     .island_1 {
       position: absolute;
-      top: 4vw;
-      left: 30vw;
-      width: 5.5vw;
+      top: 77rem;
+      left: 576rem;
+      width: 105rem;
       animation: islandBounce 3s ease-in-out infinite;
     }
 
     .island_2 {
       position: absolute;
-      top: 5vw;
-      right: 24vw;
-      width: 6.5vw;
+      top: 96rem;
+      right: 465rem;
+      width: 127rem;
       animation: islandBounce 3s 0.5s ease-in-out infinite;
     }
 
@@ -47,7 +47,7 @@
         transform: translateY(0);
       }
       50% {
-        transform: translateY(15px);
+        transform: translateY(15rem);
       }
       100% {
         transform: translateY(0);
@@ -57,8 +57,8 @@
 
   .clouds {
     z-index: -3;
-    transform: translate3d(0, 0, -3px);
-    -webkit-transform: translate3d(0, 0, -3px);
+    transform: translate3d(0, 0, -3rem);
+    -webkit-transform: translate3d(0, 0, -3rem);
 
     picture {
       width: 100%;
@@ -67,22 +67,22 @@
 
   .platforms {
     z-index: -2;
-    transform: translate3d(0, 0, -2px);
-    -webkit-transform: translate3d(0, 0, -2px);
+    transform: translate3d(0, 0, -2rem);
+    -webkit-transform: translate3d(0, 0, -2rem);
 
     .platform_1 {
       position: absolute;
-      top: 15vw;
-      right: 46.8vw;
-      width: 4.3vw;
+      top: 270rem;
+      right: 900rem;
+      width: 83rem;
       animation: platformBounce 3s 0.5s ease-in-out infinite;
     }
 
     .platform_2 {
       position: absolute;
-      top: 15vw;
-      right: 38.7vw;
-      width: 8vw;
+      top: 270rem;
+      right: 743rem;
+      width: 155rem;
       animation: platformBounce 3s ease-in-out infinite;
     }
 
@@ -91,7 +91,7 @@
         transform: translateY(0);
       }
       50% {
-        transform: translateY(10px);
+        transform: translateY(10rem);
       }
       100% {
         transform: translateY(0);
@@ -102,9 +102,9 @@
   .ground {
     position: relative;
     z-index: -2;
-    transform: translate3d(0, 0, -2px);
-    -webkit-transform: translate3d(0, 0, -2px);
-    padding-top: 0.5vw;
+    transform: translate3d(0, 0, -2rem);
+    -webkit-transform: translate3d(0, 0, -2rem);
+    padding-top: 10rem;
 
     picture {
       width: 100%;
@@ -113,36 +113,36 @@
 
   .logo {
     z-index: -1;
-    transform: translate3d(0, 0, -1px);
-    -webkit-transform: translate3d(0, 0, -1px);
+    transform: translate3d(0, 0, -1rem);
+    -webkit-transform: translate3d(0, 0, -1rem);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 2vw;
+    padding-top: 40rem;
 
     .logo_image {
-      width: 29vw;
+      width: 560rem;
     }
 
     .ribbon {
-      width: 14vw;
-      margin-top: -0.7vw;
+      width: 273rem;
+      margin-top: -12rem;
     }
   }
 
   .elems {
     z-index: 0;
-    transform: translate3d(0, 0, 0px);
-    -webkit-transform: translate3d(0, 0, 0px);
+    transform: translate3d(0, 0, 0rem);
+    -webkit-transform: translate3d(0, 0, 0rem);
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 22vw;
-    gap: 14px;
+    padding-top: 430rem;
+    gap: 14rem;
 
     > div {
-      width: 9.3vw;
+      width: 180rem;
       position: relative;
 
       picture {
@@ -153,7 +153,7 @@
             transform: translateY(0);
           }
           50% {
-            transform: translateY(-30px);
+            transform: translateY(-30rem);
           }
           100% {
             transform: translateY(0);
@@ -191,15 +191,15 @@
         @keyframes shadow {
           0% {
             transform: scale(0.9);
-            filter: blur(2px);
+            filter: blur(2rem);
           }
           50% {
             transform: scale(1);
-            filter: blur(4px);
+            filter: blur(4rem);
           }
           100% {
             transform: scale(0.9);
-            filter: blur(2px);
+            filter: blur(2rem);
           }
         }
       }
@@ -254,7 +254,7 @@
     }
 
     .elem_4 {
-      width: 12.7vw;
+      width: 250rem;
       transform: scaleX(-1);
 
       picture {
