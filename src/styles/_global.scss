@@ -1,0 +1,119 @@
+html {
+  font-family: "Changa", sans-serif;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+body {
+  background: var(--bg);
+  margin: 0;
+  overflow: hidden;
+}
+
+#loader.hidden {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.no_transition * {
+  transition: none !important;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  user-select: none;
+}
+
+section {
+  position: relative;
+}
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: transform 0.5s ease;
+}
+
+.observed {
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+
+  .visible {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+  }
+}
+
+//
+// normalize
+//
+
+a {
+  background-color: transparent;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  border-style: none;
+  display: block;
+  width: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+textarea {
+  overflow: auto;
+}

@@ -1,0 +1,60 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transform: translate3d(0, 0, 2px);
+  -webkit-transform: translate3d(0, 0, 2px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 5vw;
+  height: 80px;
+  background: linear-gradient(
+    #003c60 71px,
+    #00436b 71px,
+    #00436b 75px,
+    #002c48 75px
+  );
+  box-shadow: 0 2px 16px #000;
+
+  @media (max-width: 768px) {
+    height: 80px;
+  }
+
+  .logo {
+    width: 172px;
+  }
+
+  .socialLinks {
+    display: flex;
+    gap: 5px;
+
+    picture {
+      width: 48px;
+    }
+  }
+
+  .jags {
+    position: absolute;
+    bottom: 0;
+    height: 15px;
+    max-width: 50%;
+    overflow: hidden;
+
+    &_1 {
+      left: 0;
+    }
+
+    &_2 {
+      right: 0;
+      transform: scaleX(-1);
+    }
+
+    img {
+      width: unset;
+      height: 100%;
+    }
+  }
+}
