@@ -1,2 +1,213 @@
 .intro {
+  margin-top: 80px;
+
+  > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .sky {
+    z-index: -5;
+    transform: translate3d(0, 0, -5px);
+    -webkit-transform: translate3d(0, 0, -5px);
+    background: linear-gradient(
+      180deg,
+      #8bd1f3 0%,
+      #bde8fb 17%,
+      #e6f4ff 31.47%
+    );
+  }
+
+  .islands {
+    z-index: -4;
+    transform: translate3d(0, 0, -4px);
+    -webkit-transform: translate3d(0, 0, -4px);
+
+    .island_1 {
+      position: absolute;
+      top: 4vw;
+      left: 30vw;
+      width: 5.5vw;
+      animation: islandBounce 3s ease-in-out infinite;
+    }
+
+    .island_2 {
+      position: absolute;
+      top: 5vw;
+      right: 24vw;
+      width: 6.5vw;
+      animation: islandBounce 3s 0.5s ease-in-out infinite;
+    }
+
+    @keyframes islandBounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(15px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .clouds {
+    z-index: -3;
+    transform: translate3d(0, 0, -3px);
+    -webkit-transform: translate3d(0, 0, -3px);
+
+    picture {
+      width: 100%;
+    }
+  }
+
+  .platforms {
+    z-index: -2;
+    transform: translate3d(0, 0, -2px);
+    -webkit-transform: translate3d(0, 0, -2px);
+
+    .platform_1 {
+      position: absolute;
+      top: 15vw;
+      right: 46.8vw;
+      width: 4.3vw;
+      animation: platformBounce 3s 0.5s ease-in-out infinite;
+    }
+
+    .platform_2 {
+      position: absolute;
+      top: 15vw;
+      right: 38.7vw;
+      width: 8vw;
+      animation: platformBounce 3s ease-in-out infinite;
+    }
+
+    @keyframes platformBounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .ground {
+    position: relative;
+    z-index: -2;
+    transform: translate3d(0, 0, -2px);
+    -webkit-transform: translate3d(0, 0, -2px);
+    padding-top: 0.5vw;
+
+    picture {
+      width: 100%;
+    }
+  }
+
+  .logo {
+    z-index: -1;
+    transform: translate3d(0, 0, -1px);
+    -webkit-transform: translate3d(0, 0, -1px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2vw;
+
+    .logo_image {
+      width: 29vw;
+    }
+
+    .ribbon {
+      width: 14vw;
+      margin-top: -0.7vw;
+    }
+  }
+
+  .elems {
+    z-index: 0;
+    transform: translate3d(0, 0, 0px);
+    -webkit-transform: translate3d(0, 0, 0px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 22vw;
+    gap: 14px;
+
+    > div {
+      width: 9.3vw;
+      position: relative;
+
+      picture {
+        animation: bounce 2s ease-in-out infinite;
+
+        @keyframes bounce {
+          0% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-30px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+
+        img {
+          animation: rotating 2s 0.5s ease-in-out infinite;
+
+          @keyframes rotating {
+            0% {
+              transform: rotate(-10deg);
+            }
+            50% {
+              transform: rotate(10deg);
+            }
+            100% {
+              transform: rotate(-10deg);
+            }
+          }
+        }
+      }
+
+      .shadow {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 90%;
+        height: 10%;
+        background: #000;
+        opacity: 0.2;
+        border-radius: 50%;
+        animation: shadow 2s ease-in-out infinite;
+
+        @keyframes shadow {
+          0% {
+            transform: scale(0.9);
+            filter: blur(2px);
+          }
+          50% {
+            transform: scale(1);
+            filter: blur(4px);
+          }
+          100% {
+            transform: scale(0.9);
+            filter: blur(2px);
+          }
+        }
+      }
+    }
+
+    .middleOne {
+      width: 12.7vw;
+      transform: scaleX(-1);
+    }
+  }
 }
