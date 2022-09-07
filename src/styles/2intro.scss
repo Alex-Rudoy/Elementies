@@ -1,5 +1,6 @@
 .intro {
-  margin-top: 80rem;
+  z-index: 2;
+  margin: 80rem 0 85rem;
 
   > div {
     position: absolute;
@@ -10,9 +11,7 @@
   }
 
   .sky {
-    z-index: -5;
-    transform: translate3d(0, 0, -5rem);
-    -webkit-transform: translate3d(0, 0, -5rem);
+    z-index: 1;
     background: linear-gradient(
       180deg,
       #8bd1f3 0%,
@@ -22,9 +21,7 @@
   }
 
   .islands {
-    z-index: -4;
-    transform: translate3d(0, 0, -4rem);
-    -webkit-transform: translate3d(0, 0, -4rem);
+    z-index: 2;
 
     .island_1 {
       position: absolute;
@@ -56,9 +53,7 @@
   }
 
   .clouds {
-    z-index: -3;
-    transform: translate3d(0, 0, -3rem);
-    -webkit-transform: translate3d(0, 0, -3rem);
+    z-index: 3;
 
     picture {
       width: 100%;
@@ -66,9 +61,7 @@
   }
 
   .platforms {
-    z-index: -2;
-    transform: translate3d(0, 0, -2rem);
-    -webkit-transform: translate3d(0, 0, -2rem);
+    z-index: 4;
 
     .platform_1 {
       position: absolute;
@@ -101,9 +94,7 @@
 
   .ground {
     position: relative;
-    z-index: -2;
-    transform: translate3d(0, 0, -2rem);
-    -webkit-transform: translate3d(0, 0, -2rem);
+    z-index: 5;
     padding-top: 10rem;
 
     picture {
@@ -112,9 +103,7 @@
   }
 
   .logo {
-    z-index: -1;
-    transform: translate3d(0, 0, -1rem);
-    -webkit-transform: translate3d(0, 0, -1rem);
+    z-index: 6;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -132,9 +121,7 @@
   }
 
   .elems {
-    z-index: 0;
-    transform: translate3d(0, 0, 0rem);
-    -webkit-transform: translate3d(0, 0, 0rem);
+    z-index: 6;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -165,13 +152,13 @@
 
           @keyframes rotating {
             0% {
-              transform: rotate(-10deg);
+              transform: rotate(-5deg);
             }
             50% {
-              transform: rotate(10deg);
+              transform: rotate(5deg);
             }
             100% {
-              transform: rotate(-10deg);
+              transform: rotate(-5deg);
             }
           }
         }

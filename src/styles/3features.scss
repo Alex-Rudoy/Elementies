@@ -1,0 +1,245 @@
+.features {
+  color: #095064;
+  z-index: 3;
+
+  font-size: 17.5rem;
+  line-height: 23.5rem;
+
+  > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .sky {
+    z-index: 0;
+    background: linear-gradient(
+      180deg,
+      #14397d 2.74%,
+      #2761a1 33.29%,
+      #3579b6 48.31%,
+      #4494c7 62.14%,
+      #55bcdf 73.1%,
+      #56c3e2 79.03%
+    );
+  }
+
+  .cloudsBehindMountain {
+    z-index: 1;
+
+    picture {
+      margin-top: 756rem;
+    }
+  }
+
+  .mountain {
+    z-index: 2;
+
+    picture {
+      margin: 706rem auto 0;
+      width: 1440rem;
+    }
+  }
+
+  .cloudsThin {
+    z-index: 2;
+
+    picture {
+      margin-top: 195rem;
+    }
+  }
+
+  .cloudsFluffy {
+    z-index: 3;
+
+    picture {
+      margin-top: -349rem;
+    }
+  }
+
+  .hills {
+    z-index: 3;
+
+    picture {
+      margin-top: 824rem;
+    }
+  }
+
+  .cliff {
+    z-index: 4;
+
+    picture {
+      margin-top: 559rem;
+    }
+  }
+
+  .waterfall {
+    z-index: 4;
+    position: absolute;
+    top: -400rem;
+    right: 116rem;
+    left: unset;
+    width: 642rem;
+    height: 1108rem;
+
+    * {
+      position: absolute;
+    }
+
+    .top {
+      top: 0;
+      right: 0;
+      width: 609rem;
+    }
+
+    .bottom {
+      top: 827rem;
+      left: 0;
+      width: 468rem;
+    }
+
+    .water {
+      top: 100rem;
+      left: 158.5rem;
+      width: 152rem;
+
+      .waterPicture {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        animation: waterfall 1s infinite;
+
+        &_1 {
+          animation-delay: 0s;
+        }
+        &_2 {
+          animation-delay: 0.25s;
+        }
+        &_3 {
+          animation-delay: 0.5s;
+        }
+        &_4 {
+          animation-delay: 0.75s;
+        }
+
+        @keyframes waterfall {
+          0% {
+            opacity: 0;
+          }
+          33% {
+            opacity: 1;
+          }
+          67% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .scrolls {
+    z-index: 5;
+    position: relative;
+    top: -36px;
+
+    .whitepaper {
+      position: relative;
+      width: 437rem;
+      height: 452rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 36rem 26rem 0 38rem;
+      margin-left: 573rem;
+      margin-bottom: 120rem;
+
+      p {
+        font-weight: 500;
+        margin-bottom: 27rem;
+      }
+
+      .learnMore {
+        margin-bottom: 10rem;
+        font-weight: 700;
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 125rem;
+        height: 48rem;
+
+        picture {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: -1;
+        }
+
+        span {
+          color: #fff;
+          font-size: 16rem;
+          font-weight: 700;
+          text-shadow: 1rem 2rem 0rem rgba(0, 0, 0, 0.25);
+        }
+      }
+
+      > picture {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -2;
+      }
+    }
+
+    .featuresGrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 42rem 13rem;
+      width: min-content;
+      margin-left: 560rem;
+      margin-bottom: 474rem;
+
+      .feature {
+        width: 258rem;
+        height: 330rem;
+        position: relative;
+        padding: 156rem 22rem 0 36rem;
+
+        .heading {
+          font-weight: 700;
+          margin-bottom: 8rem;
+        }
+
+        > picture {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          z-index: -1;
+
+          &.crystal_card {
+            width: 117%;
+            left: -7%;
+          }
+        }
+      }
+    }
+  }
+
+  .crystals {
+    z-index: 6;
+  }
+}
