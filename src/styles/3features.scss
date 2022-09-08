@@ -45,6 +45,7 @@
 
   .cloudsThin {
     z-index: 2;
+    filter: blur(2rem);
 
     picture {
       margin-top: 195rem;
@@ -53,9 +54,10 @@
 
   .cloudsFluffy {
     z-index: 3;
+    filter: blur(1rem);
 
     picture {
-      margin-top: -349rem;
+      margin-top: -326rem;
     }
   }
 
@@ -78,7 +80,7 @@
   .waterfall {
     z-index: 4;
     position: absolute;
-    top: -400rem;
+    top: -330rem;
     right: 116rem;
     left: unset;
     width: 642rem;
@@ -104,6 +106,7 @@
       top: 100rem;
       left: 158.5rem;
       width: 152rem;
+      height: 834rem;
 
       .waterPicture {
         top: 0;
@@ -137,6 +140,74 @@
           }
           100% {
             opacity: 0;
+          }
+        }
+      }
+
+      .foam {
+        animation: 1.2s foamAnimation ease-in-out infinite;
+
+        &_1 {
+          width: 151rem;
+          height: 265rem;
+          bottom: 0;
+          animation-delay: 0.2s;
+        }
+
+        &_2 {
+          width: 81rem;
+          height: 190rem;
+          bottom: 30rem;
+          right: 18rem;
+          animation-delay: 0.4s;
+        }
+
+        &_3 {
+          width: 22rem;
+          height: 64rem;
+          bottom: 257rem;
+          right: 51rem;
+          animation-delay: 0.6s;
+        }
+
+        &_4 {
+          width: 48rem;
+          height: 140rem;
+          bottom: 123rem;
+          right: 25rem;
+          animation-delay: 0.8s;
+        }
+
+        &_5 {
+          width: 124rem;
+          height: 67rem;
+          bottom: -3rem;
+          left: 0;
+          animation-delay: 1s;
+        }
+
+        &_6 {
+          width: 48rem;
+          height: 191rem;
+          bottom: 152rem;
+          left: 15rem;
+          animation-delay: 0s;
+        }
+
+        @keyframes foamAnimation {
+          0% {
+            opacity: 0;
+            transform: translate(0, -70rem) scale(0.9);
+          }
+          40% {
+            opacity: 1;
+          }
+          60% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+            transform: translate(0, 0) scale(1);
           }
         }
       }
@@ -241,5 +312,83 @@
 
   .crystals {
     z-index: 6;
+
+    .crystal {
+      position: absolute;
+      animation: crystalBounce 1.5s ease-in-out infinite;
+
+      &_1 {
+        top: -106rem;
+        left: 251rem;
+        width: 382rem;
+        height: 434rem;
+        animation-delay: 0s;
+      }
+
+      &_2 {
+        top: -229rem;
+        left: 390rem;
+        width: 221rem;
+        height: 228rem;
+        animation-delay: 0.4s;
+      }
+
+      &_3 {
+        top: 21rem;
+        left: 1060rem;
+        width: 40rem;
+        height: 40rem;
+        animation-delay: 0.2s;
+      }
+
+      &_4 {
+        top: 175rem;
+        left: 1000rem;
+        width: 221rem;
+        height: 228rem;
+        animation-delay: 0.6s;
+      }
+
+      &_5 {
+        top: 233rem;
+        left: 938rem;
+        width: 221rem;
+        height: 228rem;
+        animation-delay: 0.3s;
+      }
+
+      @keyframes crystalBounce {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(15rem);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      &.shimmer {
+        filter: blur(10rem);
+        z-index: -1;
+        animation-name: shimmerBounce;
+
+        @keyframes shimmerBounce {
+          0% {
+            transform: translateY(0);
+            opacity: 0.8;
+          }
+          50% {
+            transform: translateY(15rem);
+            opacity: 0.3;
+          }
+          100% {
+            transform: translateY(0);
+            opacity: 0.8;
+          }
+        }
+      }
+    }
   }
 }
