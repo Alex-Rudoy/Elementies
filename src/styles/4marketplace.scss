@@ -1,3 +1,134 @@
 .marketplace {
+  color: #fff;
   z-index: 2;
+
+  > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .bg {
+    z-index: 1;
+    background: linear-gradient(
+      180deg,
+      #3090ba 0%,
+      #2d7dae 47.83%,
+      #294c8c 100%
+    );
+  }
+
+  .stones {
+    z-index: 2;
+    filter: blur(1rem);
+
+    picture {
+      margin-top: 55rem;
+    }
+  }
+
+  .light {
+    z-index: 3;
+    filter: blur(2rem);
+
+    picture {
+      margin-top: 239rem;
+      width: 1592rem;
+    }
+  }
+
+  .content {
+    position: relative;
+    z-index: 4;
+    padding-top: 460rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .heading {
+      font-size: 47.5rem;
+      line-height: 64.5rem;
+      font-weight: 700;
+      text-align: center;
+      text-shadow: 0px 1px 20px #095064;
+      margin-bottom: 19rem;
+    }
+
+    .description {
+      width: 747rem;
+      font-size: 19rem;
+      line-height: 23rem;
+      font-weight: 600;
+      text-align: center;
+      text-shadow: 1px 2px 9px #072730;
+      margin-bottom: 50rem;
+    }
+
+    .icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 39rem;
+      height: 196rem;
+      margin-bottom: 100rem; // todo remove
+
+      .icon {
+        position: relative;
+        width: 236rem;
+        animation: iconBounce 1.5s ease-in-out infinite;
+
+        &_1 {
+          animation-delay: 0s;
+        }
+
+        &_2 {
+          animation-delay: 0.3s;
+        }
+
+        &_3 {
+          animation-delay: 0.6s;
+        }
+
+        picture {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          z-index: -1;
+        }
+
+        .item {
+          bottom: 32rem;
+        }
+
+        .elem {
+          width: 252rem;
+          right: 3rem;
+        }
+
+        @keyframes iconBounce {
+          0% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(5rem);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+
+  .plants {
+    z-index: 5;
+
+    picture {
+      margin-top: 410rem;
+    }
+  }
 }
