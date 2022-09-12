@@ -1,3 +1,244 @@
 .roadmap {
   z-index: 1;
+
+  > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .background {
+    z-index: 1;
+  }
+
+  .fog {
+    z-index: 2;
+
+    picture {
+      margin-top: 150rem;
+    }
+  }
+
+  .sparks {
+    z-index: 3;
+
+    picture {
+      position: absolute;
+      animation: sparksAnimation 3s ease-in-out infinite;
+    }
+
+    .sparks_1 {
+      width: 875rem;
+      top: 135rem;
+      left: 340rem;
+      animation-delay: 0s;
+    }
+
+    .sparks_2 {
+      width: 918.9rem;
+      top: 667rem;
+      left: 743rem;
+      animation-delay: 1s;
+    }
+
+    .sparks_3 {
+      width: 213.6rem;
+      top: 944rem;
+      left: 866.9rem;
+      animation-delay: 2s;
+    }
+
+    @keyframes sparksAnimation {
+      0% {
+        transform: translate(0, 0);
+        opacity: 0.8;
+      }
+      50% {
+        transform: translate(0, -20rem);
+        opacity: 0.3;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .bottle {
+    z-index: 4;
+
+    picture {
+      position: absolute;
+    }
+
+    .bottle_bottle {
+      width: 394rem;
+      margin-top: 382rem;
+    }
+
+    .water {
+      width: 229rem;
+      margin-top: 709rem;
+      margin-left: 277rem;
+      animation: bottleWaterAnimation 0.75s infinite;
+
+      &_1 {
+        animation-delay: 0s;
+      }
+      &_2 {
+        animation-delay: 0.25s;
+      }
+      &_3 {
+        animation-delay: 0.5s;
+      }
+
+      @keyframes bottleWaterAnimation {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+
+    .foam {
+      animation: 1.2s bottleFoamAnimation ease-in-out infinite;
+
+      &_1 {
+        width: 108.5rem;
+        height: 242.6rem;
+        margin-top: 809rem;
+        margin-left: 333rem;
+        animation-delay: 0.8s;
+      }
+
+      &_2 {
+        width: 111rem;
+        height: 179.2rem;
+        margin-top: 829rem;
+        margin-left: 321rem;
+        animation-delay: 0.4s;
+      }
+
+      &_3 {
+        width: 93.75rem;
+        height: 208.06rem;
+        margin-top: 894rem;
+        margin-left: 430rem;
+        animation-delay: 0s;
+      }
+
+      @keyframes bottleFoamAnimation {
+        0% {
+          opacity: 0;
+          transform: translate(-23rem, -70rem) scale(0.9);
+        }
+        40% {
+          opacity: 1;
+        }
+        60% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          transform: translate(0, 0) scale(1);
+        }
+      }
+    }
+  }
+
+  .light {
+    z-index: 5;
+
+    picture {
+      width: 863.35rem;
+      margin-top: 235rem;
+      margin-left: 550rem;
+      animation: 1s lightningFlashAnimation linear infinite;
+    }
+  }
+
+  .content {
+    z-index: 6;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 560rem;
+
+    .heading {
+      font-size: 47.45rem;
+      line-height: 64rem;
+      font-weight: 700;
+      color: #ffffff;
+      text-shadow: 0px 1px 20px #095064;
+      margin-bottom: 40.26rem;
+    }
+
+    .papers {
+      display: flex;
+      gap: 36.5rem;
+      color: #095064;
+      margin-bottom: 300rem;
+      width: min-content;
+
+      .paper {
+        width: 254.21rem;
+        height: 289.56rem;
+        padding: 24.36rem 21.81rem 0 31.4rem;
+        position: relative;
+
+        &_heading {
+          font-size: 20.85rem;
+          line-height: 25rem;
+          font-weight: 700;
+          margin-bottom: 12.4rem;
+        }
+
+        &_description {
+          font-size: 17.65rem;
+          line-height: 21.18rem;
+          font-weight: 500;
+        }
+
+        picture {
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .lightning {
+    z-index: 7;
+
+    picture {
+      width: 370rem;
+      margin-top: 800rem;
+      margin-left: 791rem;
+      animation: 1s lightningFlashAnimation linear infinite;
+    }
+  }
+
+  @keyframes lightningFlashAnimation {
+    0% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.8;
+    }
+  }
 }

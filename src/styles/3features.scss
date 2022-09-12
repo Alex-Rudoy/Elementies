@@ -113,7 +113,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        animation: waterfall 1s infinite;
+        animation: waterfallWaterAnimation 1s infinite;
 
         &_1 {
           animation-delay: 0s;
@@ -128,7 +128,7 @@
           animation-delay: 0.75s;
         }
 
-        @keyframes waterfall {
+        @keyframes waterfallWaterAnimation {
           0% {
             opacity: 0;
           }
@@ -145,7 +145,7 @@
       }
 
       .foam {
-        animation: 1.2s foamAnimation ease-in-out infinite;
+        animation: 1.2s waterfallFoamAnimation ease-in-out infinite;
 
         &_1 {
           width: 151rem;
@@ -194,7 +194,7 @@
           animation-delay: 0s;
         }
 
-        @keyframes foamAnimation {
+        @keyframes waterfallFoamAnimation {
           0% {
             opacity: 0;
             transform: translate(0, -70rem) scale(0.9);
