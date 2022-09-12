@@ -5,6 +5,10 @@
   font-size: 0.175rem;
   line-height: 0.235rem;
 
+  @media (max-width: 768px) {
+    display: none;
+  }
+
   .sky {
     z-index: 0;
     background: linear-gradient(

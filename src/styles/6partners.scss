@@ -1,5 +1,8 @@
 .partners {
   z-index: 0;
+  @media (max-width: 768px) {
+    display: none;
+  }
 
   .background {
     z-index: 1;

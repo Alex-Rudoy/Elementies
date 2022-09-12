@@ -15,6 +15,9 @@ footer {
   color: #6edcff;
   font-size: 0.12rem;
   line-height: 0.14rem;
+  @media (max-width: 768px) {
+    display: none;
+  }
 
   .logo {
     width: 1.727rem;

@@ -1,6 +1,6 @@
 .intro {
   z-index: 2;
-  margin-top: 0.8rem;
+  margin-top: 0.46rem;
   margin-bottom: 0.85rem;
   background-color: #8bd1f3;
 
@@ -23,6 +23,12 @@
       left: 5.76rem;
       width: 1.05rem;
       animation: islandBounce 3s ease-in-out infinite;
+
+      @media (max-width: 768px) {
+        top: 0.4rem;
+        left: 0.18rem;
+        width: 0.271rem;
+      }
     }
 
     .island_2 {
@@ -31,6 +37,12 @@
       right: 4.65rem;
       width: 1.27rem;
       animation: islandBounce 3s 0.5s ease-in-out infinite;
+
+      @media (max-width: 768px) {
+        top: 0.406rem;
+        right: 0.126rem;
+        width: 0.315rem;
+      }
     }
 
     @keyframes islandBounce {
@@ -44,6 +56,20 @@
         transform: translateY(0);
       }
     }
+
+    @media (max-width: 768px) {
+      @keyframes islandBounce {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(0.07rem);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    }
   }
 
   .clouds {
@@ -51,6 +77,10 @@
 
     picture {
       width: 100%;
+
+      @media (max-width: 768px) {
+        margin-top: 0.5rem;
+      }
     }
   }
 
@@ -63,6 +93,12 @@
       right: 9rem;
       width: 0.83rem;
       animation: platformBounce 3s 0.5s ease-in-out infinite;
+
+      @media (max-width: 768px) {
+        top: 1.55rem;
+        right: 1.5rem;
+        width: 0.265rem;
+      }
     }
 
     .platform_2 {
@@ -71,6 +107,12 @@
       right: 7.43rem;
       width: 1.55rem;
       animation: platformBounce 3s ease-in-out infinite;
+
+      @media (max-width: 768px) {
+        top: 1.55rem;
+        right: 1.01rem;
+        width: 0.494rem;
+      }
     }
 
     @keyframes platformBounce {
@@ -91,6 +133,10 @@
     z-index: 5;
     padding-top: 0.1rem;
 
+    @media (max-width: 768px) {
+      padding-top: 1rem;
+    }
+
     picture {
       width: 100%;
     }
@@ -102,15 +148,24 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 0.4rem;
+    padding-top: 0.24rem;
 
     .logo_image {
       width: 5.6rem;
+
+      @media (max-width: 768px) {
+        width: 2.08rem;
+      }
     }
 
     .ribbon {
       width: 2.73rem;
       margin-top: -0.12rem;
+
+      @media (max-width: 768px) {
+        width: 1.242rem;
+        margin-top: 0.32rem;
+      }
     }
   }
 
@@ -122,9 +177,24 @@
     padding-top: 4.3rem;
     gap: 0.14rem;
 
+    @media (max-width: 768px) {
+      padding-top: 1.67rem;
+
+      .elem_1,
+      .elem_2,
+      .elem_6,
+      .elem_7 {
+        display: none;
+      }
+    }
+
     > div {
       width: 1.8rem;
       position: relative;
+
+      @media (max-width: 768px) {
+        width: 0.862rem;
+      }
 
       picture {
         animation: bounce 2s ease-in-out infinite;
@@ -138,6 +208,20 @@
           }
           100% {
             transform: translateY(0);
+          }
+        }
+
+        @media (max-width: 768px) {
+          @keyframes bounce {
+            0% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(-0.15rem);
+            }
+            100% {
+              transform: translateY(0);
+            }
           }
         }
 
@@ -238,6 +322,10 @@
       width: 2.5rem;
       transform: scaleX(-1);
 
+      @media (max-width: 768px) {
+        width: 1.09rem;
+      }
+
       picture {
         animation-delay: 0.5s;
         animation-duration: 2.1s;
@@ -256,16 +344,16 @@
     .elem_5 {
       picture {
         animation-delay: -0.4s;
-        animation-duration: 2.4s;
+        animation-duration: 2s;
 
         img {
           animation-delay: 0.1s;
-          animation-duration: 2.4s;
+          animation-duration: 2s;
         }
       }
       .shadow {
         animation-delay: -0.4s;
-        animation-duration: 2.4s;
+        animation-duration: 2s;
       }
     }
 

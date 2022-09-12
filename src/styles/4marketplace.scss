@@ -2,6 +2,10 @@
   color: #fff;
   z-index: 2;
 
+  @media (max-width: 768px) {
+    display: none;
+  }
+
   .bg {
     z-index: 1;
     background: linear-gradient(
