@@ -1,11 +1,112 @@
 .partners {
   z-index: 0;
-}
 
-.heading {
-  font-size: 47.45rem;
-  line-height: 64rem;
-  font-weight: 700;
-  color: #9fd2fd;
-  text-shadow: 0px 1px 20px #095064;
+  .background {
+    z-index: 1;
+    margin-top: -49rem;
+  }
+
+  .light {
+    z-index: 2;
+
+    picture {
+      margin-top: -48rem;
+      animation: crystalLightAnimation 3s ease-in-out infinite;
+
+      @keyframes crystalLightAnimation {
+        0% {
+          opacity: 0.3;
+        }
+        50% {
+          opacity: 0.8;
+        }
+        100% {
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+
+  .sparks {
+    z-index: 3;
+
+    > picture {
+      position: absolute;
+      animation: crystalSparksAnimation 3s ease-in-out infinite;
+    }
+
+    .sparks_1 {
+      width: 258rem;
+      top: 254rem;
+      left: 28rem;
+      animation-delay: 1s;
+    }
+
+    .sparks_2 {
+      width: 314rem;
+      top: 216rem;
+      left: 1495rem;
+      animation-delay: 2s;
+    }
+
+    @keyframes crystalSparksAnimation {
+      0% {
+        transform: translate(0, 0);
+        opacity: 0.3;
+      }
+      50% {
+        transform: translate(0, -20rem);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 0.3;
+      }
+    }
+  }
+
+  .crystals {
+    z-index: 4;
+
+    picture {
+      margin-top: 192rem;
+    }
+  }
+
+  .content {
+    z-index: 5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .heading {
+      font-size: 47.45rem;
+      line-height: 64rem;
+      font-weight: 700;
+      color: #9fd2fd;
+      text-shadow: 0px 1px 20px #095064;
+      margin-bottom: 21rem;
+    }
+
+    .partnersGrid {
+      display: grid;
+      grid-template-columns: 220rem 130rem 220rem;
+      grid-gap: 70rem 100rem;
+      width: min-content;
+      margin-bottom: 237rem;
+
+      .partner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .partner_2 {
+        position: relative;
+        top: -10rem;
+      }
+    }
+  }
 }
