@@ -2,9 +2,8 @@
   color: #095064;
   z-index: 3;
 
-  font-size: 17.5rem;
-  line-height: 23.5rem;
-
+  font-size: 0.175rem;
+  line-height: 0.235rem;
 
   .sky {
     z-index: 0;
@@ -23,7 +22,7 @@
     z-index: 1;
 
     picture {
-      margin-top: 756rem;
+      margin-top: 7.56rem;
     }
   }
 
@@ -31,26 +30,26 @@
     z-index: 2;
 
     picture {
-      margin: 706rem auto 0;
-      width: 1440rem;
+      margin: 7.06rem auto 0;
+      width: 14.4rem;
     }
   }
 
   .cloudsThin {
     z-index: 2;
-    filter: blur(2rem);
+    filter: blur(0.02rem);
 
     picture {
-      margin-top: 195rem;
+      margin-top: 1.95rem;
     }
   }
 
   .cloudsFluffy {
     z-index: 3;
-    filter: blur(1rem);
+    filter: blur(0.01rem);
 
     picture {
-      margin-top: -326rem;
+      margin-top: -3.9rem;
     }
   }
 
@@ -58,7 +57,7 @@
     z-index: 3;
 
     picture {
-      margin-top: 824rem;
+      margin-top: 8.24rem;
     }
   }
 
@@ -66,18 +65,18 @@
     z-index: 4;
 
     picture {
-      margin-top: 559rem;
+      margin-top: 5.59rem;
     }
   }
 
   .waterfall {
     z-index: 4;
     position: absolute;
-    top: -330rem;
-    right: 116rem;
+    top: -3.3rem;
+    right: 1.16rem;
     left: unset;
-    width: 642rem;
-    height: 1108rem;
+    width: 6.42rem;
+    height: 11.08rem;
 
     * {
       position: absolute;
@@ -86,20 +85,20 @@
     .top {
       top: 0;
       right: 0;
-      width: 609rem;
+      width: 6.09rem;
     }
 
     .bottom {
-      top: 827rem;
+      top: 8.27rem;
       left: 0;
-      width: 468rem;
+      width: 4.68rem;
     }
 
     .water {
-      top: 100rem;
-      left: 158.5rem;
-      width: 152rem;
-      height: 834rem;
+      top: 1rem;
+      left: 1.585rem;
+      width: 1.52rem;
+      height: 8.34rem;
 
       .waterPicture {
         top: 0;
@@ -141,56 +140,56 @@
         animation: 1.2s waterfallFoamAnimation ease-in-out infinite;
 
         &_1 {
-          width: 151rem;
-          height: 265rem;
+          width: 1.51rem;
+          height: 2.65rem;
           bottom: 0;
           animation-delay: 0.2s;
         }
 
         &_2 {
-          width: 81rem;
-          height: 190rem;
-          bottom: 30rem;
-          right: 18rem;
+          width: 0.81rem;
+          height: 1.9rem;
+          bottom: 0.3rem;
+          right: 0.18rem;
           animation-delay: 0.4s;
         }
 
         &_3 {
-          width: 22rem;
-          height: 64rem;
-          bottom: 257rem;
-          right: 51rem;
+          width: 0.22rem;
+          height: 0.64rem;
+          bottom: 2.57rem;
+          right: 0.51rem;
           animation-delay: 0.6s;
         }
 
         &_4 {
-          width: 48rem;
-          height: 140rem;
-          bottom: 123rem;
-          right: 25rem;
+          width: 0.48rem;
+          height: 1.4rem;
+          bottom: 1.23rem;
+          right: 0.25rem;
           animation-delay: 0.8s;
         }
 
         &_5 {
-          width: 124rem;
-          height: 67rem;
-          bottom: -3rem;
+          width: 1.24rem;
+          height: 0.67rem;
+          bottom: -0.03rem;
           left: 0;
           animation-delay: 1s;
         }
 
         &_6 {
-          width: 48rem;
-          height: 191rem;
-          bottom: 152rem;
-          left: 15rem;
+          width: 0.48rem;
+          height: 1.91rem;
+          bottom: 1.52rem;
+          left: 0.15rem;
           animation-delay: 0s;
         }
 
         @keyframes waterfallFoamAnimation {
           0% {
             opacity: 0;
-            transform: translate(0, -70rem) scale(0.9);
+            transform: translate(0, -0.7rem) scale(0.9);
           }
           40% {
             opacity: 1;
@@ -210,26 +209,26 @@
   .scrolls {
     z-index: 5;
     position: relative;
-    top: -36px;
+    top: -0.36rem;
 
     .whitepaper {
       position: relative;
-      width: 437rem;
-      height: 452rem;
+      width: 4.37rem;
+      height: 4.52rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 36rem 26rem 0 38rem;
-      margin-left: 573rem;
-      margin-bottom: 120rem;
+      padding: 0.36rem 0.26rem 0 0.38rem;
+      margin-left: 5.73rem;
+      margin-bottom: 1.2rem;
 
       p {
         font-weight: 500;
-        margin-bottom: 27rem;
+        margin-bottom: 0.27rem;
       }
 
       .learnMore {
-        margin-bottom: 10rem;
+        margin-bottom: 0.1rem;
         font-weight: 700;
       }
 
@@ -238,8 +237,8 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        width: 125rem;
-        height: 48rem;
+        width: 1.25rem;
+        height: 0.48rem;
 
         picture {
           position: absolute;
@@ -252,9 +251,9 @@
 
         span {
           color: #fff;
-          font-size: 16rem;
+          font-size: 0.16rem;
           font-weight: 700;
-          text-shadow: 1rem 2rem 0rem rgba(0, 0, 0, 0.25);
+          text-shadow: 0.01rem 0.02rem 0rem rgba(0, 0, 0, 0.25);
         }
       }
 
@@ -271,19 +270,19 @@
     .featuresGrid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 42rem 13rem;
+      grid-gap: 0.42rem 0.13rem;
       width: min-content;
-      margin-left: 560rem;
+      margin-left: 5.6rem;
 
       .feature {
-        width: 258rem;
-        height: 330rem;
+        width: 2.58rem;
+        height: 3.3rem;
         position: relative;
-        padding: 156rem 22rem 0 36rem;
+        padding: 1.56rem 0.22rem 0 0.36rem;
 
         .heading {
           font-weight: 700;
-          margin-bottom: 8rem;
+          margin-bottom: 0.08rem;
         }
 
         > picture {
@@ -310,42 +309,42 @@
       animation: crystalBounce 1.5s ease-in-out infinite;
 
       &_1 {
-        top: -106rem;
-        left: 251rem;
-        width: 382rem;
-        height: 434rem;
+        top: -1.06rem;
+        left: 2.51rem;
+        width: 3.82rem;
+        height: 4.34rem;
         animation-delay: 0s;
       }
 
       &_2 {
-        top: -229rem;
-        left: 390rem;
-        width: 221rem;
-        height: 228rem;
+        top: -2.29rem;
+        left: 3.9rem;
+        width: 2.21rem;
+        height: 2.28rem;
         animation-delay: 0.4s;
       }
 
       &_3 {
-        top: 21rem;
-        left: 1060rem;
-        width: 40rem;
-        height: 40rem;
+        top: 0.21rem;
+        left: 10.6rem;
+        width: 0.4rem;
+        height: 0.4rem;
         animation-delay: 0.2s;
       }
 
       &_4 {
-        top: 175rem;
-        left: 1000rem;
-        width: 221rem;
-        height: 228rem;
+        top: 1.75rem;
+        left: 10rem;
+        width: 2.21rem;
+        height: 2.28rem;
         animation-delay: 0.6s;
       }
 
       &_5 {
-        top: 233rem;
-        left: 938rem;
-        width: 221rem;
-        height: 228rem;
+        top: 2.33rem;
+        left: 9.38rem;
+        width: 2.21rem;
+        height: 2.28rem;
         animation-delay: 0.3s;
       }
 
@@ -354,7 +353,7 @@
           transform: translateY(0);
         }
         50% {
-          transform: translateY(15rem);
+          transform: translateY(0.15rem);
         }
         100% {
           transform: translateY(0);
@@ -362,7 +361,7 @@
       }
 
       &.shimmer {
-        filter: blur(10rem);
+        filter: blur(0.1rem);
         z-index: -1;
         animation-name: shimmerBounce;
 
@@ -372,7 +371,7 @@
             opacity: 0.8;
           }
           50% {
-            transform: translateY(15rem);
+            transform: translateY(0.15rem);
             opacity: 0.3;
           }
           100% {

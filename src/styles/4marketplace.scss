@@ -14,49 +14,49 @@
 
   .stones {
     z-index: 2;
-    filter: blur(1rem);
+    filter: blur(0.01rem);
 
     picture {
-      margin-top: 55rem;
+      margin-top: 0.55rem;
     }
   }
 
   .light {
     z-index: 3;
-    filter: blur(2rem);
+    filter: blur(0.02rem);
 
     picture {
-      margin-top: 239rem;
-      width: 1592rem;
+      margin-top: 2.39rem;
+      width: 15.92rem;
     }
   }
 
   .content {
     position: relative;
     z-index: 4;
-    padding-top: 460rem;
+    padding-top: 4.6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 
     .heading {
-      font-size: 47.5rem;
-      line-height: 64.5rem;
+      font-size: 0.475rem;
+      line-height: 0.645rem;
       font-weight: 700;
       text-align: center;
       text-shadow: 0px 1px 20px #095064;
-      margin-bottom: 19rem;
+      margin-bottom: 0.19rem;
     }
 
     .description {
-      width: 747rem;
-      font-size: 19rem;
-      line-height: 23rem;
+      width: 7.47rem;
+      font-size: 0.19rem;
+      line-height: 0.23rem;
       font-weight: 600;
       text-align: center;
       text-shadow: 1px 2px 9px #072730;
-      margin-bottom: 50rem;
+      margin-bottom: 0.5rem;
     }
 
     .icons {
@@ -64,13 +64,13 @@
       flex-direction: row;
       justify-content: center;
       align-items: flex-end;
-      gap: 39rem;
-      height: 196rem;
-      margin-bottom: 100rem; // todo remove
+      gap: 0.39rem;
+      height: 1.96rem;
+      margin-bottom: 1rem; // todo remove ???
 
       .icon {
         position: relative;
-        width: 236rem;
+        width: 2.36rem;
         animation: iconBounce 1.5s ease-in-out infinite;
 
         &_1 {
@@ -93,12 +93,12 @@
         }
 
         .item {
-          bottom: 32rem;
+          bottom: 0.32rem;
         }
 
         .elem {
-          width: 252rem;
-          right: 3rem;
+          width: 2.52rem;
+          right: 0.03rem;
         }
 
         @keyframes iconBounce {
@@ -106,7 +106,7 @@
             transform: translateY(0);
           }
           50% {
-            transform: translateY(5rem);
+            transform: translateY(0.05rem);
           }
           100% {
             transform: translateY(0);
@@ -120,7 +120,7 @@
     z-index: 5;
 
     picture {
-      margin-top: 410rem;
+      margin-top: 4.1rem;
     }
   }
 }

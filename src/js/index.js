@@ -1,4 +1,3 @@
-import "./intersectionObserver";
 import "./loader";
 import "./parallax";
 

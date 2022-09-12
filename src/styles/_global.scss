@@ -1,10 +1,11 @@
 html {
   font-family: "Changa", sans-serif;
   color: var(--text);
-  font-size: 0.0521vw;
+  font-size: 5.21vw;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
+  background-color: #003c60;
 
   @media (max-width: 768px) {
     font-size: 0.313;
@@ -41,25 +42,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-  }
-}
-
-.parallax {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  transition: transform 0.5s ease;
-}
-
-.observed {
-  opacity: 0;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-
-  .visible {
-    opacity: 1 !important;
-    transform: translate(0, 0) !important;
+    transition: transform 0.2s ease-out;
   }
 }
 

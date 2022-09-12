@@ -1,2 +1,39 @@
 footer {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 3.7rem;
+  height: 1.1rem;
+  background: linear-gradient(
+    #002c48 0.05rem,
+    #00436b 0.05rem,
+    #00436b 0.09rem,
+    #003c60 0.09rem
+  );
+  box-shadow: 0 -0.02rem 0.16rem #000;
+
+  .jags {
+    position: absolute;
+    top: 0;
+    height: 0.15rem;
+    max-width: 50%;
+    overflow: hidden;
+
+    &_1 {
+      left: 0;
+      transform: scale(0, -1);
+    }
+
+    &_2 {
+      right: 0;
+      transform: scale(-1, -1);
+    }
+
+    img {
+      width: unset;
+      height: 100%;
+    }
+  }
 }

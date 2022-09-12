@@ -7,44 +7,44 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 370rem;
-  height: 80rem;
+  padding: 0 3.7rem;
+  height: 0.8rem;
   background: linear-gradient(
-    #003c60 71rem,
-    #00436b 71rem,
-    #00436b 75rem,
-    #002c48 75rem
+    #003c60 0.71rem,
+    #00436b 0.71rem,
+    #00436b 0.75rem,
+    #002c48 0.75rem
   );
-  box-shadow: 0 2rem 16rem #000;
+  box-shadow: 0 0.02rem 0.16rem #000;
 
   @media (max-width: 768px) {
-    height: 80rem;
+    height: 0.8rem;
   }
 
   .logo {
-    width: 172rem;
+    width: 1.72rem;
   }
 
   .socialLinks {
     display: flex;
-    gap: 5rem;
+    gap: 0.05rem;
 
     picture {
-      width: 48rem;
+      width: 0.48rem;
     }
   }
 
   .buttons {
     display: flex;
-    gap: 12rem;
+    gap: 0.12rem;
 
     .button {
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
-      width: 125rem;
-      height: 48rem;
+      width: 1.25rem;
+      height: 0.48rem;
 
       picture {
         position: absolute;
@@ -57,9 +57,9 @@ header {
 
       span {
         color: #fff;
-        font-size: 16rem;
+        font-size: 0.16rem;
         font-weight: 700;
-        text-shadow: 1rem 2rem 0rem rgba(0, 0, 0, 0.25);
+        text-shadow: 0.01rem 0.02rem 0rem rgba(0, 0, 0, 0.25);
       }
     }
   }
@@ -67,7 +67,7 @@ header {
   .jags {
     position: absolute;
     bottom: 0;
-    height: 15rem;
+    height: 0.15rem;
     max-width: 50%;
     overflow: hidden;
 

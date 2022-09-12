@@ -3,14 +3,14 @@
 
   .background {
     z-index: 1;
-    margin-top: -49rem;
+    margin-top: -0.73rem;
   }
 
   .light {
     z-index: 2;
 
     picture {
-      margin-top: -48rem;
+      margin-top: -0.48rem;
       animation: crystalLightAnimation 3s ease-in-out infinite;
 
       @keyframes crystalLightAnimation {
@@ -36,16 +36,16 @@
     }
 
     .sparks_1 {
-      width: 258rem;
-      top: 254rem;
-      left: 28rem;
+      width: 2.58rem;
+      top: 2.54rem;
+      left: 0.28rem;
       animation-delay: 1s;
     }
 
     .sparks_2 {
-      width: 314rem;
-      top: 216rem;
-      left: 1495rem;
+      width: 3.14rem;
+      top: 2.16rem;
+      left: 14.95rem;
       animation-delay: 2s;
     }
 
@@ -55,7 +55,7 @@
         opacity: 0.3;
       }
       50% {
-        transform: translate(0, -20rem);
+        transform: translate(0, -0.2rem);
         opacity: 0.8;
       }
       100% {
@@ -69,7 +69,7 @@
     z-index: 4;
 
     picture {
-      margin-top: 192rem;
+      margin-top: 1.92rem;
     }
   }
 
@@ -79,22 +79,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 0.4rem;
 
     .heading {
-      font-size: 47.45rem;
-      line-height: 64rem;
+      font-size: 0.4745rem;
+      line-height: 0.64rem;
       font-weight: 700;
       color: #9fd2fd;
       text-shadow: 0px 1px 20px #095064;
-      margin-bottom: 21rem;
+      margin-bottom: 0.21rem;
     }
 
     .partnersGrid {
       display: grid;
-      grid-template-columns: 220rem 130rem 220rem;
-      grid-gap: 70rem 100rem;
+      grid-template-columns: 2.2rem 1.3rem 2.2rem;
+      grid-gap: 0.7rem 1rem;
       width: min-content;
-      margin-bottom: 237rem;
+      margin-bottom: 2.1rem;
 
       .partner {
         width: 100%;
@@ -105,7 +106,7 @@
 
       .partner_2 {
         position: relative;
-        top: -10rem;
+        top: -0.1rem;
       }
     }
   }
