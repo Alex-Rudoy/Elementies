@@ -5,10 +5,6 @@
   font-size: 0.175rem;
   line-height: 0.235rem;
 
-  @media (max-width: 768px) {
-    display: none;
-  }
-
   .sky {
     z-index: 0;
     background: linear-gradient(
@@ -43,8 +39,47 @@
     z-index: 2;
     filter: blur(0.02rem);
 
-    picture {
-      margin-top: 1.95rem;
+    .thinCloud {
+      position: absolute;
+      transform-origin: 50% -30rem;
+      animation: thinCloudsAnimation 40s linear infinite;
+
+      &_1 {
+        top: 4.5rem;
+        left: 5rem;
+        width: 9.14rem;
+        animation-delay: -20s;
+      }
+
+      &_2 {
+        top: 4.5rem;
+        left: 5.5rem;
+        width: 7.42rem;
+      }
+
+      &_3 {
+        top: 3.5rem;
+        left: 7rem;
+        width: 4.34rem;
+        animation-delay: -10s;
+      }
+
+      &_4 {
+        top: 3.5rem;
+        left: 4.5rem;
+        width: 10.3rem;
+        animation-delay: -30s;
+      }
+
+      @keyframes thinCloudsAnimation {
+        0% {
+          transform: rotate(40deg);
+        }
+
+        100% {
+          transform: rotate(-40deg);
+        }
+      }
     }
   }
 
@@ -54,6 +89,10 @@
 
     picture {
       margin-top: -3.9rem;
+
+      @media (max-width: 768px) {
+        margin-top: -1.6rem;
+      }
     }
   }
 
@@ -68,8 +107,115 @@
   .cliff {
     z-index: 4;
 
-    picture {
+    .cliffPicture {
       margin-top: 5.59rem;
+    }
+
+    .tail {
+      margin-top: 0;
+      position: absolute;
+      top: 13.9rem;
+      left: 9.2rem;
+      width: 3.23rem;
+      animation: tailAnimation 4s ease-in-out infinite;
+      transform-origin: 0.5rem 0.5rem;
+
+      @keyframes tailAnimation {
+        0% {
+          transform: rotate(0);
+        }
+        50% {
+          transform: rotate(-10deg);
+        }
+        100% {
+          transform: rotate(0);
+        }
+      }
+    }
+
+    .leafContainer {
+      position: absolute;
+      top: 8.9rem;
+      left: 2.5rem;
+      transform-origin: 2.5rem -2.5rem;
+      animation: leafFlightAnimation 3s ease-out infinite;
+
+      @keyframes leafFlightAnimation {
+        100% {
+          transform: rotate(-40deg);
+        }
+      }
+
+      .leaf {
+        width: 0.2rem;
+        height: 0.2rem;
+        background: radial-gradient(#c14b98 0%, #67246e 100%);
+        border-radius: 50% 5% 50% 5%;
+        animation: leafAnimation 3s ease-in-out infinite;
+
+        @keyframes leafAnimation {
+          0% {
+            opacity: 0;
+          }
+          40% {
+            opacity: 1;
+          }
+          100% {
+            transform: rotate(250deg);
+            opacity: 0;
+          }
+        }
+      }
+
+      &_2 {
+        animation-delay: 1.3s;
+        top: 8.6rem;
+        left: 3rem;
+
+        .leaf {
+          animation-delay: 1.3s;
+        }
+      }
+
+      &_3 {
+        animation-delay: 2.1s;
+        top: 8.4rem;
+        left: 3.5rem;
+
+        .leaf {
+          animation-delay: 2.1s;
+        }
+      }
+
+      &_4 {
+        animation-delay: 0.5s;
+        top: 8.3rem;
+        left: 4rem;
+
+        .leaf {
+          animation-delay: 0.5s;
+        }
+      }
+
+      &_5 {
+        animation-delay: 1.7s;
+        top: 8.4rem;
+        left: 4.5rem;
+
+        .leaf {
+          animation-delay: 1.7s;
+        }
+      }
+
+      &_6 {
+        animation-delay: 1.7s;
+        top: 9.6rem;
+        left: 2rem;
+
+        .leaf {
+          animation-delay: 1.7s;
+        }
+      }
     }
   }
 
@@ -82,6 +228,13 @@
     width: 6.42rem;
     height: 11.08rem;
 
+    @media (max-width: 768px) {
+      top: -1.6rem;
+      right: 0;
+      width: 1.04rem;
+      height: 2.281rem;
+    }
+
     * {
       position: absolute;
     }
@@ -90,54 +243,34 @@
       top: 0;
       right: 0;
       width: 6.09rem;
+
+      @media (max-width: 768px) {
+        width: 0.965rem;
+      }
     }
 
     .bottom {
       top: 8.27rem;
       left: 0;
       width: 4.68rem;
+
+      @media (max-width: 768px) {
+        top: 1.7rem;
+        width: 0.964rem;
+      }
     }
 
     .water {
-      top: 1rem;
-      left: 1.585rem;
-      width: 1.52rem;
-      height: 8.34rem;
+      top: 0.45rem;
+      left: 1.4rem;
+      width: 2.05rem;
+      height: 9.34rem;
 
-      .waterPicture {
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        animation: waterfallWaterAnimation 1s infinite;
-
-        &_1 {
-          animation-delay: 0s;
-        }
-        &_2 {
-          animation-delay: 0.25s;
-        }
-        &_3 {
-          animation-delay: 0.5s;
-        }
-        &_4 {
-          animation-delay: 0.75s;
-        }
-
-        @keyframes waterfallWaterAnimation {
-          0% {
-            opacity: 0;
-          }
-          33% {
-            opacity: 1;
-          }
-          67% {
-            opacity: 0;
-          }
-          100% {
-            opacity: 0;
-          }
-        }
+      @media (max-width: 768px) {
+        top: 0.206rem;
+        left: 0.326rem;
+        width: 0.313rem;
+        height: 1.717rem;
       }
 
       .foam {
@@ -148,6 +281,11 @@
           height: 2.65rem;
           bottom: 0;
           animation-delay: 0.2s;
+
+          @media (max-width: 768px) {
+            width: 0.311rem;
+            height: 0.546rem;
+          }
         }
 
         &_2 {
@@ -156,6 +294,13 @@
           bottom: 0.3rem;
           right: 0.18rem;
           animation-delay: 0.4s;
+
+          @media (max-width: 768px) {
+            width: 0.167rem;
+            height: 0.392rem;
+            bottom: 0.094rem;
+            right: 0.037rem;
+          }
         }
 
         &_3 {
@@ -164,6 +309,13 @@
           bottom: 2.57rem;
           right: 0.51rem;
           animation-delay: 0.6s;
+
+          @media (max-width: 768px) {
+            width: 0.044rem;
+            height: 0.132rem;
+            bottom: 0.53rem;
+            right: 0.106rem;
+          }
         }
 
         &_4 {
@@ -172,6 +324,13 @@
           bottom: 1.23rem;
           right: 0.25rem;
           animation-delay: 0.8s;
+
+          @media (max-width: 768px) {
+            width: 0.098rem;
+            height: 0.289rem;
+            bottom: 0.253rem;
+            right: 0.052rem;
+          }
         }
 
         &_5 {
@@ -180,6 +339,11 @@
           bottom: -0.03rem;
           left: 0;
           animation-delay: 1s;
+
+          @media (max-width: 768px) {
+            width: 0.256rem;
+            height: 0.138rem;
+          }
         }
 
         &_6 {
@@ -188,6 +352,13 @@
           bottom: 1.52rem;
           left: 0.15rem;
           animation-delay: 0s;
+
+          @media (max-width: 768px) {
+            width: 0.098rem;
+            height: 0.393rem;
+            bottom: 0.313rem;
+            left: 0.035rem;
+          }
         }
 
         @keyframes waterfallFoamAnimation {
@@ -204,6 +375,25 @@
           100% {
             opacity: 0;
             transform: translate(0, 0) scale(1);
+          }
+        }
+
+        @media (max-width: 768px) {
+          @keyframes waterfallFoamAnimation {
+            0% {
+              opacity: 0;
+              transform: translate(0, -0.2rem) scale(0.9);
+            }
+            40% {
+              opacity: 1;
+            }
+            60% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+              transform: translate(0, 0) scale(1);
+            }
           }
         }
       }
@@ -318,6 +508,7 @@
         width: 3.82rem;
         height: 4.34rem;
         animation-delay: 0s;
+        animation-duration: 3s;
       }
 
       &_2 {

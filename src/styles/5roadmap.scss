@@ -65,87 +65,10 @@
   .bottle {
     z-index: 4;
 
-    picture {
-      position: absolute;
-    }
-
-    .bottle_bottle {
-      width: 3.94rem;
-      margin-top: 3.82rem;
-    }
-
-    .water {
-      width: 2.29rem;
-      margin-top: 7.09rem;
-      margin-left: 2.77rem;
-      animation: bottleWaterAnimation 0.75s infinite;
-
-      &_1 {
-        animation-delay: 0s;
-      }
-      &_2 {
-        animation-delay: 0.25s;
-      }
-      &_3 {
-        animation-delay: 0.5s;
-      }
-
-      @keyframes bottleWaterAnimation {
-        0% {
-          opacity: 0;
-        }
-        50% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-    }
-
-    .foam {
-      animation: 1.2s bottleFoamAnimation ease-in-out infinite;
-
-      &_1 {
-        width: 1.085rem;
-        height: 2.426rem;
-        margin-top: 8.09rem;
-        margin-left: 3.33rem;
-        animation-delay: 0.8s;
-      }
-
-      &_2 {
-        width: 1.11rem;
-        height: 1.792rem;
-        margin-top: 8.29rem;
-        margin-left: 3.21rem;
-        animation-delay: 0.4s;
-      }
-
-      &_3 {
-        width: 0.9375rem;
-        height: 2.0806rem;
-        margin-top: 8.94rem;
-        margin-left: 4.3rem;
-        animation-delay: 0s;
-      }
-
-      @keyframes bottleFoamAnimation {
-        0% {
-          opacity: 0;
-          transform: translate(-0.23rem, -0.7rem) scale(0.9);
-        }
-        40% {
-          opacity: 1;
-        }
-        60% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0;
-          transform: translate(0, 0) scale(1);
-        }
-      }
+    video {
+      width: 2.7rem;
+      margin-top: 6.9rem;
+      margin-left: 2.49rem;
     }
   }
 
@@ -221,7 +144,7 @@
     picture {
       width: 3.7rem;
       margin-top: 8rem;
-      margin-left: 7.91rem;
+      margin-left: 7.7rem;
       animation: 1s lightningFlashAnimation linear infinite;
     }
   }

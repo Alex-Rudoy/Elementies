@@ -123,8 +123,52 @@
   .plants {
     z-index: 5;
 
-    picture {
+    .plantsPicture {
       margin-top: 4.1rem;
+      position: relative;
+    }
+
+    .flower {
+      position: absolute;
+      top: 9.3rem;
+      right: 2.2rem;
+      animation: flowerAnimation 5s ease-in-out infinite;
+
+      @keyframes flowerAnimation {
+        50% {
+          transform: rotate(-5deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      picture {
+        position: absolute;
+      }
+
+      &_stem {
+        bottom: -0.4rem;
+        left: -0.46rem;
+        width: 2.35rem;
+      }
+
+      &_tip {
+        bottom: 2.3rem;
+        left: -1.6rem;
+        width: 3.78rem;
+        transform-origin: 3rem 2.3rem;
+        animation: flowerTipAnimation 5s 0.5s ease-in-out infinite;
+
+        @keyframes flowerTipAnimation {
+          50% {
+            transform: rotate(-5deg);
+          }
+          100% {
+            transform: rotate(0deg);
+          }
+        }
+      }
     }
   }
 }
