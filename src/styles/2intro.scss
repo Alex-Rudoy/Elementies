@@ -176,8 +176,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 3rem;
-      margin-top: -1.2rem;
+      gap: 1rem;
+      margin-top: 4rem;
+      padding-right: 0.2rem;
 
       svg {
         width: 0.6rem;
@@ -215,7 +216,7 @@
       }
 
       picture {
-        animation: bounce 2s ease-in-out infinite;
+        animation: bounce 3s ease-in-out infinite;
 
         @keyframes bounce {
           0% {
@@ -244,7 +245,7 @@
         }
 
         img {
-          animation: rotating 2s ease-in-out infinite;
+          animation: rotating 3s ease-in-out infinite;
 
           @keyframes rotating {
             0% {
@@ -269,7 +270,7 @@
         background: #000;
         opacity: 0.2;
         border-radius: 50%;
-        animation: shadow 2s ease-in-out infinite;
+        animation: shadow 3s ease-in-out infinite;
 
         @keyframes shadow {
           0% {
@@ -345,6 +346,7 @@
       }
 
       picture {
+        transform: scale(1.1);
         animation-delay: 0.5s;
         animation-duration: 2.1s;
 

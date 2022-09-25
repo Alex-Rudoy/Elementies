@@ -21,7 +21,7 @@
     filter: blur(0.01rem);
 
     picture {
-      margin-top: 0.55rem;
+      margin-top: 0rem;
     }
   }
 
@@ -30,7 +30,7 @@
     filter: blur(0.02rem);
 
     picture {
-      margin-top: 2.39rem;
+      margin-top: 1rem;
       width: 15.92rem;
     }
   }
@@ -38,7 +38,7 @@
   .content {
     position: relative;
     z-index: 4;
-    padding-top: 4.6rem;
+    padding-top: 3.6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +60,7 @@
       font-weight: 600;
       text-align: center;
       text-shadow: 1px 2px 9px #072730;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
     }
 
     .icons {
@@ -75,18 +75,18 @@
       .icon {
         position: relative;
         width: 2.36rem;
-        animation: iconBounce 1.5s ease-in-out infinite;
+        animation: iconBounce 3s ease-in-out infinite;
 
         &_1 {
           animation-delay: 0s;
         }
 
         &_2 {
-          animation-delay: 0.3s;
+          animation-delay: 0.6s;
         }
 
         &_3 {
-          animation-delay: 0.6s;
+          animation-delay: 1.2s;
         }
 
         picture {
@@ -110,7 +110,7 @@
             transform: translateY(0);
           }
           50% {
-            transform: translateY(0.05rem);
+            transform: translateY(0.1rem);
           }
           100% {
             transform: translateY(0);

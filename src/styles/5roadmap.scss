@@ -14,6 +14,20 @@
 
     picture {
       margin-top: 1.5rem;
+
+      animation: fogAnimation 5s linear infinite;
+
+      @keyframes fogAnimation {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
     }
   }
 
@@ -66,9 +80,10 @@
     z-index: 4;
 
     video {
-      width: 2.7rem;
+      width: 2.5rem;
       margin-top: 6.9rem;
-      margin-left: 2.49rem;
+      margin-left: 2.8rem;
+      transform: scaleX(1.35);
     }
   }
 
@@ -108,8 +123,8 @@
       width: min-content;
 
       .paper {
-        width: 2.5421rem;
-        height: 2.8956rem;
+        width: 2.8rem;
+        height: 3.6rem;
         padding: 0.2436rem 0.2181rem 0 0.314rem;
         position: relative;
 
@@ -120,7 +135,12 @@
           margin-bottom: 0.124rem;
         }
 
-        &_description {
+        ul {
+          padding: 0;
+          list-style-position: inside;
+        }
+
+        li {
           font-size: 0.1765rem;
           line-height: 0.2118rem;
           font-weight: 500;
@@ -133,6 +153,10 @@
           position: absolute;
           top: 0;
           left: 0;
+
+          img {
+            height: 100%;
+          }
         }
       }
     }
@@ -142,9 +166,9 @@
     z-index: 7;
 
     picture {
-      width: 3.7rem;
-      margin-top: 8rem;
-      margin-left: 7.7rem;
+      width: 4.1rem;
+      margin-top: 8.5rem;
+      margin-left: 7.5rem;
       animation: 1s lightningFlashAnimation linear infinite;
     }
   }

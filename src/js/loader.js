@@ -4,5 +4,5 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.classList.remove("no_transition");
   setTimeout(() => {
     document.getElementById("loader").classList.add("hidden");
-  }, 1); // todo: change to 500 later
+  }, 1500); // todo: change to 500 later
 });
