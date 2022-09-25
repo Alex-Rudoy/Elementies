@@ -5,6 +5,12 @@
   font-size: 0.175rem;
   line-height: 0.235rem;
 
+  @media (max-width: 768px) {
+    font-size: 0.09rem;
+    line-height: 0.115rem;
+    padding-bottom: 0.6rem;
+  }
+
   .sky {
     z-index: 0;
     background: linear-gradient(
@@ -22,7 +28,7 @@
     z-index: 1;
 
     picture {
-      margin-top: 8rem;
+      margin-top: 7.9rem;
     }
   }
 
@@ -31,7 +37,7 @@
 
     picture {
       margin: 7.5rem auto 0;
-      width: 14.4rem;
+      width: 3rem;
     }
   }
 
@@ -39,22 +45,42 @@
     z-index: 2;
     filter: blur(0.02rem);
 
+    @media (max-width: 768px) {
+      filter: blur(0.01rem);
+    }
+
     .thinCloud {
       position: absolute;
       transform-origin: 50% -40rem;
       animation: thinCloudsAnimation 30s linear infinite;
+
+      @media (max-width: 768px) {
+        transform-origin: 50% -10rem;
+      }
 
       &_1 {
         top: 4.5rem;
         left: 5rem;
         width: 9.14rem;
         animation-delay: -10s;
+
+        @media (max-width: 768px) {
+          top: 2.5rem;
+          left: 1rem;
+          width: 1.9rem;
+        }
       }
 
       &_2 {
         top: 4.5rem;
         left: 5.5rem;
         width: 7.42rem;
+
+        @media (max-width: 768px) {
+          top: 2.5rem;
+          left: 1rem;
+          width: 1.5rem;
+        }
       }
 
       &_3 {
@@ -62,6 +88,12 @@
         left: 7rem;
         width: 4.34rem;
         animation-delay: -5s;
+
+        @media (max-width: 768px) {
+          top: 1.5rem;
+          left: 1rem;
+          width: 0.9rem;
+        }
       }
 
       &_4 {
@@ -69,6 +101,12 @@
         left: 4.5rem;
         width: 10.3rem;
         animation-delay: -20s;
+
+        @media (max-width: 768px) {
+          top: 1.5rem;
+          left: 1rem;
+          width: 2.1rem;
+        }
       }
 
       @keyframes thinCloudsAnimation {
@@ -100,7 +138,7 @@
     z-index: 3;
 
     picture {
-      margin-top: 9.24rem;
+      margin-top: 8.24rem;
     }
   }
 
@@ -109,6 +147,10 @@
 
     .cliffPicture {
       margin-top: 6.59rem;
+
+      @media (max-width: 768px) {
+        margin-top: 8.5rem;
+      }
     }
 
     .tail {
@@ -139,6 +181,10 @@
       left: 2.5rem;
       transform-origin: 2.5rem -2.5rem;
       animation: leafFlightAnimation 3s ease-out infinite;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
 
       @keyframes leafFlightAnimation {
         100% {
@@ -261,141 +307,14 @@
     }
 
     .water {
-      top: 0.45rem;
+      top: 1rem;
       left: 1.4rem;
       width: 2.05rem;
-      height: 9.34rem;
 
       @media (max-width: 768px) {
-        top: 0.206rem;
-        left: 0.326rem;
-        width: 0.313rem;
-        height: 1.717rem;
-      }
-
-      .foam {
-        animation: 1.2s waterfallFoamAnimation ease-in-out infinite;
-
-        &_1 {
-          width: 1.51rem;
-          height: 2.65rem;
-          bottom: 0;
-          animation-delay: 0.2s;
-
-          @media (max-width: 768px) {
-            width: 0.311rem;
-            height: 0.546rem;
-          }
-        }
-
-        &_2 {
-          width: 0.81rem;
-          height: 1.9rem;
-          bottom: 0.3rem;
-          right: 0.18rem;
-          animation-delay: 0.4s;
-
-          @media (max-width: 768px) {
-            width: 0.167rem;
-            height: 0.392rem;
-            bottom: 0.094rem;
-            right: 0.037rem;
-          }
-        }
-
-        &_3 {
-          width: 0.22rem;
-          height: 0.64rem;
-          bottom: 2.57rem;
-          right: 0.51rem;
-          animation-delay: 0.6s;
-
-          @media (max-width: 768px) {
-            width: 0.044rem;
-            height: 0.132rem;
-            bottom: 0.53rem;
-            right: 0.106rem;
-          }
-        }
-
-        &_4 {
-          width: 0.48rem;
-          height: 1.4rem;
-          bottom: 1.23rem;
-          right: 0.25rem;
-          animation-delay: 0.8s;
-
-          @media (max-width: 768px) {
-            width: 0.098rem;
-            height: 0.289rem;
-            bottom: 0.253rem;
-            right: 0.052rem;
-          }
-        }
-
-        &_5 {
-          width: 1.24rem;
-          height: 0.67rem;
-          bottom: -0.03rem;
-          left: 0;
-          animation-delay: 1s;
-
-          @media (max-width: 768px) {
-            width: 0.256rem;
-            height: 0.138rem;
-          }
-        }
-
-        &_6 {
-          width: 0.48rem;
-          height: 1.91rem;
-          bottom: 1.52rem;
-          left: 0.15rem;
-          animation-delay: 0s;
-
-          @media (max-width: 768px) {
-            width: 0.098rem;
-            height: 0.393rem;
-            bottom: 0.313rem;
-            left: 0.035rem;
-          }
-        }
-
-        @keyframes waterfallFoamAnimation {
-          0% {
-            opacity: 0;
-            transform: translate(0, -0.7rem) scale(0.9);
-          }
-          40% {
-            opacity: 1;
-          }
-          60% {
-            opacity: 1;
-          }
-          100% {
-            opacity: 0;
-            transform: translate(0, 0) scale(1);
-          }
-        }
-
-        @media (max-width: 768px) {
-          @keyframes waterfallFoamAnimation {
-            0% {
-              opacity: 0;
-              transform: translate(0, -0.2rem) scale(0.9);
-            }
-            40% {
-              opacity: 1;
-            }
-            60% {
-              opacity: 1;
-            }
-            100% {
-              opacity: 0;
-              transform: translate(0, 0) scale(1);
-            }
-          }
-        }
+        top: 0.21rem;
+        left: 0.3rem;
+        width: 0.424rem;
       }
     }
   }
@@ -416,14 +335,30 @@
       margin-left: 5.73rem;
       margin-bottom: 1.2rem;
 
+      @media (max-width: 768px) {
+        width: 2.1rem;
+        height: 2.33rem;
+        padding: 0.166rem 0.18rem 0;
+        margin-left: 0.15rem;
+        margin-bottom: 0.3rem;
+      }
+
       p {
         font-weight: 500;
         margin-bottom: 0.27rem;
+
+        @media (max-width: 768px) {
+          margin-bottom: 0.05rem;
+        }
       }
 
       .learnMore {
         margin-bottom: 0.1rem;
         font-weight: 700;
+
+        @media (max-width: 768px) {
+          margin-bottom: 0.04rem;
+        }
       }
 
       .button {
@@ -434,6 +369,11 @@
         cursor: pointer;
         width: 1.25rem;
         height: 0.48rem;
+
+        @media (max-width: 768px) {
+          width: 0.71rem;
+          height: 0.29rem;
+        }
 
         picture {
           position: absolute;
@@ -449,6 +389,10 @@
           font-size: 0.16rem;
           font-weight: 700;
           text-shadow: 0.01rem 0.02rem 0rem rgba(0, 0, 0, 0.25);
+
+          @media (max-width: 768px) {
+            font-size: 0.09rem;
+          }
         }
       }
 
@@ -459,6 +403,10 @@
         right: 0;
         bottom: 0;
         z-index: -2;
+
+        img {
+          height: 100%;
+        }
       }
     }
 
@@ -469,11 +417,24 @@
       width: min-content;
       margin-left: 5.6rem;
 
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        margin-left: 0.05rem;
+        grid-gap: 0.1rem 0rem;
+      }
+
       .feature {
         width: 2.9rem;
         height: 3.7rem;
         position: relative;
         padding: 1.7rem 0.22rem 0 0.36rem;
+
+        @media (max-width: 768px) {
+          width: 1.5rem;
+          height: 2rem;
+          padding: 0.9rem 0.15rem 0 0.26rem;
+        }
 
         .heading {
           font-weight: 700;
@@ -510,6 +471,13 @@
         height: 4.34rem;
         animation-delay: 0s;
         animation-duration: 3s;
+
+        @media (max-width: 768px) {
+          top: -1.5rem;
+          left: 0.15rem;
+          width: 0.8rem;
+          height: 0.91rem;
+        }
       }
 
       &_2 {
@@ -518,6 +486,14 @@
         width: 2.21rem;
         height: 2.28rem;
         animation-delay: 0.4s;
+
+        @media (max-width: 768px) {
+          top: 1.6rem;
+          left: 1.64rem;
+          width: 0.46rem;
+          height: 0.48rem;
+          animation-delay: 0.2s;
+        }
       }
 
       &_3 {
@@ -526,6 +502,14 @@
         width: 0.4rem;
         height: 0.4rem;
         animation-delay: 0.2s;
+
+        @media (max-width: 768px) {
+          top: -1rem;
+          left: 1.1rem;
+          width: 0.08rem;
+          height: 0.08rem;
+          animation-delay: 0.4s;
+        }
       }
 
       &_4 {
@@ -534,6 +518,14 @@
         width: 2.21rem;
         height: 2.28rem;
         animation-delay: 0.6s;
+
+        @media (max-width: 768px) {
+          top: -1.3rem;
+          left: 1.7rem;
+          width: 0.46rem;
+          height: 0.48rem;
+          animation-delay: 0s;
+        }
       }
 
       &_5 {
@@ -542,6 +534,14 @@
         width: 2.21rem;
         height: 2.28rem;
         animation-delay: 0.3s;
+
+        @media (max-width: 768px) {
+          top: 1.3rem;
+          left: 2.5rem;
+          width: 0.46rem;
+          height: 0.48rem;
+          animation-delay: 0.6s;
+        }
       }
 
       @keyframes crystalBounce {
@@ -553,6 +553,20 @@
         }
         100% {
           transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        @keyframes crystalBounce {
+          0% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(0.05rem);
+          }
+          100% {
+            transform: translateY(0);
+          }
         }
       }
 
@@ -573,6 +587,23 @@
           100% {
             transform: translateY(0);
             opacity: 0.8;
+          }
+        }
+
+        @media (max-width: 768px) {
+          @keyframes shimmerBounce {
+            0% {
+              transform: translateY(0);
+              opacity: 0.8;
+            }
+            50% {
+              transform: translateY(0.05rem);
+              opacity: 0.3;
+            }
+            100% {
+              transform: translateY(0);
+              opacity: 0.8;
+            }
           }
         }
       }

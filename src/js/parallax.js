@@ -12,27 +12,47 @@ const applyParallax = (bg, coefficient) => {
   const sectionY = section.getBoundingClientRect().top;
   let offset = -sectionY / coefficient;
   if (bg.classList.contains("hills")) {
-    offset = Math.min(offset, 0);
+    if (window.innerWidth > 768) {
+      offset = Math.min(offset, 0);
+    } else {
+      offset = Math.min(offset, 32);
+    }
   }
   if (bg.classList.contains("mountain")) {
-    offset = Math.min(offset, 67);
+    if (window.innerWidth > 768) {
+      offset = Math.min(offset, 67);
+    } else {
+      offset = Math.min(offset, 130);
+    }
   }
-  if (bg.classList.contains("stones")) {
+  if (bg.classList.contains("stones") && window.innerWidth > 768) {
     offset = Math.min(offset, -10);
   }
   bg.style.transform = `translateY(${offset}px)`;
 };
 
 const parallaxEffect = () => {
-  far1?.forEach((bg) => applyParallax(bg, 12));
-  far2?.forEach((bg) => applyParallax(bg, 8));
-  far3?.forEach((bg) => applyParallax(bg, 4));
-  close1?.forEach((bg) => applyParallax(bg, -12));
-  close2?.forEach((bg) => applyParallax(bg, -8));
-  close3?.forEach((bg) => applyParallax(bg, -4));
+  console.log("kek");
+  if (window.innerWidth > 768) {
+    // desktop
+    far1?.forEach((bg) => applyParallax(bg, 12));
+    far2?.forEach((bg) => applyParallax(bg, 8));
+    far3?.forEach((bg) => applyParallax(bg, 4));
+    close1?.forEach((bg) => applyParallax(bg, -12));
+    close2?.forEach((bg) => applyParallax(bg, -8));
+    close3?.forEach((bg) => applyParallax(bg, -4));
+  } else {
+    // mobile
+    far1?.forEach((bg) => applyParallax(bg, 24));
+    far2?.forEach((bg) => applyParallax(bg, 16));
+    far3?.forEach((bg) => applyParallax(bg, 8));
+    close1?.forEach((bg) => applyParallax(bg, -24));
+    close2?.forEach((bg) => applyParallax(bg, -16));
+    close3?.forEach((bg) => applyParallax(bg, -8));
+  }
 };
 
-setTimeout(parallaxEffect, 100);
+setTimeout(parallaxEffect, 1000);
 
 const throttledParallaxEffect = throttle(parallaxEffect, 100);
 

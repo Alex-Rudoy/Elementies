@@ -68,9 +68,8 @@
     />
   </head>
   <body class="no_transition">
-    <div
-      id="loader"
-      style="
+    <style>
+      #loader {
         position: fixed;
         top: 0;
         bottom: 0;
@@ -88,9 +87,21 @@
         align-items: center;
         opacity: 1;
         transition: opacity 1s ease;
-      "
-    >
-      <picture style="width: 29.18vw; padding-top: 5.42vw">
+      }
+
+      #loader picture {
+        width: 29.18vw;
+        padding-top: 5.42vw;
+      }
+      @media (max-width: 768px) {
+        #loader picture {
+          padding-top: 21.88vw;
+          width: 65vw;
+        }
+      }
+    </style>
+    <div id="loader">
+      <picture>
         <source srcset="img/logo.webp" type="image/webp" />
         <source srcset="img/logo.png" type="image/png" />
         <img src="img/logo.png" alt="Elementies" />
@@ -808,16 +819,6 @@
         <div class="flower">
           <picture class="flower_stem">
             <source
-              srcset="img/marketplace_flower_stem@768.webp"
-              type="image/webp"
-              media="(max-width: 768px)"
-            />
-            <source
-              srcset="img/marketplace_flower_stem@768.png"
-              type="image/png"
-              media="(max-width: 768px)"
-            />
-            <source
               srcset="img/marketplace_flower_stem.webp"
               type="image/webp"
             />
@@ -825,16 +826,6 @@
             <img src="img/marketplace_flower_stem.png" />
           </picture>
           <picture class="flower_tip">
-            <source
-              srcset="img/marketplace_flower_tip@768.webp"
-              type="image/webp"
-              media="(max-width: 768px)"
-            />
-            <source
-              srcset="img/marketplace_flower_tip@768.png"
-              type="image/png"
-              media="(max-width: 768px)"
-            />
             <source
               srcset="img/marketplace_flower_tip.webp"
               type="image/webp"
