@@ -11,8 +11,8 @@
       name="description"
       content="Elementies is a Pokémon-inspired, play-to-earn game universe that uses the Solana blockchain. The game will be available on PC, macOS, Android, and iOS. The game’s main characters are Elementies, NFT tokens used in-game. Players will gain rewards in the form of $ELM and $BRP tokens by winning battles in various PvE and PvP game modes and participating in events."
     />
-    <!-- todo update URL -->
-    <link rel="canonical" href="https://quantumgravity.games/" />
+    <!-- todo update URL quantumgravity to new one -->
+    <link rel="canonical" href="https://elementies.art/" />
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
     <meta name="google" content="nositelinkssearchbox" />
@@ -27,11 +27,8 @@
     <!-- open graph -->
     <meta property="og:title" content="Elementies" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://quantumgravity.games/" />
-    <meta
-      property="og:image"
-      content="https://quantumgravity.games/img/og_img.png"
-    />
+    <meta property="og:url" content="https://elementies.art/" />
+    <meta property="og:image" content="https://elementies.art/img/og_img.png" />
     <meta
       property="og:description"
       content="Elementies is a Pokémon-inspired, play-to-earn game universe that uses the Solana blockchain. The game will be available on PC, macOS, Android, and iOS. The game’s main characters are Elementies, NFT tokens used in-game. Players will gain rewards in the form of $ELM and $BRP tokens by winning battles in various PvE and PvP game modes and participating in events."
@@ -41,7 +38,7 @@
 
     <!-- twitter -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:url" content="https://quantumgravity.games/" />
+    <meta name="twitter:url" content="https://elementies.art/" />
     <meta name="twitter:title" content="Elementies" />
     <meta
       name="twitter:description"
@@ -49,7 +46,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://quantumgravity.games/img/twitter_img.png"
+      content="https://elementies.art/img/twitter_img.png"
     />
 
     <link rel="icon" type="image/png" href="img/favicon.png" />
@@ -92,6 +89,9 @@
       #loader picture {
         width: 29.18vw;
         padding-top: 5.42vw;
+      }
+      #loader picture img {
+        width: 100%;
       }
       @media (max-width: 768px) {
         #loader picture {
@@ -551,10 +551,11 @@
           <source srcset="img/features_waterfall_bottom.png" type="image/png" />
           <img src="img/features_waterfall_bottom.png" />
         </picture>
-        <video autoplay loop muted playsinline class="water">
-          <source src="img/features_waterfall_water.webm" type="video/webm" />
-        </video>
       </div>
+
+      <video autoplay loop muted playsinline class="water parallax_close_2">
+        <source src="img/features_waterfall_water.webm" type="video/webm" />
+      </video>
 
       <div class="scrolls">
         <div class="whitepaper">
@@ -573,14 +574,19 @@
           </p>
           <p class="learnMore">Learn more in the:</p>
 
-          <div class="button">
+          <a
+            href="https://drive.google.com/file/d/1N56DxTAj0opQdryGZGEKpeZ3Jx1kqDCD/edit"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
             <picture>
               <source srcset="img/button_green.webp" type="image/webp" />
               <source srcset="img/button_green.png" type="image/png" />
               <img src="img/button_green.png" />
             </picture>
             <span>WHITEPAPER</span>
-          </div>
+          </a>
 
           <picture>
             <source srcset="img/features_whitepaper.webp" type="image/webp" />
@@ -768,45 +774,21 @@
         </p>
         <div class="icons">
           <div class="icon icon_1">
-            <picture class="platform">
-              <source
-                srcset="img/marketplace_platform.webp"
-                type="image/webp"
-              />
-              <source srcset="img/marketplace_platform.png" type="image/png" />
-              <img src="img/marketplace_platform.png" />
-            </picture>
-            <picture class="item">
+            <picture>
               <source srcset="img/marketplace_item_1.webp" type="image/webp" />
               <source srcset="img/marketplace_item_1.png" type="image/png" />
               <img src="img/marketplace_item_1.png" />
             </picture>
           </div>
           <div class="icon icon_2">
-            <picture class="platform">
-              <source
-                srcset="img/marketplace_platform.webp"
-                type="image/webp"
-              />
-              <source srcset="img/marketplace_platform.png" type="image/png" />
-              <img src="img/marketplace_platform.png" />
-            </picture>
-            <picture class="item elem">
+            <picture class="elem">
               <source srcset="img/marketplace_item_2.webp" type="image/webp" />
               <source srcset="img/marketplace_item_2.png" type="image/png" />
               <img src="img/marketplace_item_2.png" />
             </picture>
           </div>
           <div class="icon icon_3">
-            <picture class="platform">
-              <source
-                srcset="img/marketplace_platform.webp"
-                type="image/webp"
-              />
-              <source srcset="img/marketplace_platform.png" type="image/png" />
-              <img src="img/marketplace_platform.png" />
-            </picture>
-            <picture class="item">
+            <picture>
               <source srcset="img/marketplace_item_3.webp" type="image/webp" />
               <source srcset="img/marketplace_item_3.png" type="image/png" />
               <img src="img/marketplace_item_3.png" />
