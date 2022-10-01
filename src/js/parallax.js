@@ -25,14 +25,17 @@ const applyParallax = (bg, coefficient) => {
       offset = Math.min(offset, 130);
     }
   }
-  if (bg.classList.contains("stones") && window.innerWidth > 768) {
-    offset = Math.min(offset, -10);
+  if (bg.classList.contains("stones")) {
+    if (window.innerWidth > 768) {
+      offset = Math.min(offset, -10);
+    } else {
+      offset = Math.min(offset, 4);
+    }
   }
   bg.style.transform = `translateY(${offset}px)`;
 };
 
 const parallaxEffect = () => {
-  console.log("kek");
   if (window.innerWidth > 768) {
     // desktop
     far1?.forEach((bg) => applyParallax(bg, 12));

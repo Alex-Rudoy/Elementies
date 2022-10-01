@@ -3,6 +3,11 @@
 
   .background {
     z-index: 1;
+
+    @media (max-width: 768px) {
+      width: 140%;
+      left: -20%;
+    }
   }
 
   .fog {
@@ -10,6 +15,10 @@
 
     picture {
       margin-top: 1.5rem;
+
+      @media (max-width: 768px) {
+        margin-top: 0.4rem;
+      }
 
       animation: fogAnimation 5s linear infinite;
 
@@ -74,23 +83,45 @@
 
   .bottle {
     z-index: 4;
+    mix-blend-mode: lighten;
 
     video {
       width: 2.5rem;
       margin-top: 6.9rem;
       margin-left: 2.8rem;
       transform: scaleX(1.35);
+
+      @media (max-width: 768px) {
+        width: 0.58rem;
+        margin-top: 1.61rem;
+        margin-left: 0.02rem;
+      }
     }
   }
 
-  .light {
+  .particles {
     z-index: 5;
 
-    picture {
-      width: 8.6335rem;
-      margin-top: 2.35rem;
-      margin-left: 5.5rem;
+    .lightBehindPaper {
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(114, 201, 201, 0.74) 0%,
+        rgba(114, 201, 201, 0.15) 100%
+      );
+      filter: blur(50px);
+      border-radius: 50%;
+      width: 6rem;
+      height: 6rem;
+      margin-top: 6.35rem;
+      margin-left: 6.6rem;
       animation: 1s lightningFlashAnimation linear infinite;
+
+      @media (max-width: 768px) {
+        width: 2rem;
+        height: 2rem;
+        margin-top: 0.7rem;
+        margin-left: 0.6rem;
+      }
     }
   }
 
@@ -102,6 +133,10 @@
     align-items: center;
     padding-top: 5.6rem;
 
+    @media (max-width: 768px) {
+      padding-top: 0.45rem;
+    }
+
     .heading {
       font-size: 0.4745rem;
       line-height: 0.64rem;
@@ -109,6 +144,13 @@
       color: #ffffff;
       text-shadow: 0 0.01rem 0.2rem #095064;
       margin-bottom: 0.4026rem;
+
+      @media (max-width: 768px) {
+        font-size: 0.12rem;
+        line-height: 0.16rem;
+        margin-bottom: 0.03rem;
+        text-shadow: 0 0 0.06rem #095064;
+      }
     }
 
     .papers {
@@ -118,17 +160,33 @@
       margin-bottom: 3rem;
       width: min-content;
 
+      @media (max-width: 768px) {
+        gap: 0.03rem;
+      }
+
       .paper {
         width: 2.8rem;
         height: 3.6rem;
         padding: 0.2436rem 0.2181rem 0 0.314rem;
         position: relative;
 
+        @media (max-width: 768px) {
+          width: 1.01rem;
+          height: 1.27rem;
+          padding: 0.06rem 0 0 0.07rem;
+        }
+
         &_heading {
           font-size: 0.2085rem;
           line-height: 0.25rem;
           font-weight: 700;
           margin-bottom: 0.124rem;
+
+          @media (max-width: 768px) {
+            font-size: 0.08rem;
+            line-height: 0.1rem;
+            margin-bottom: 0.04rem;
+          }
         }
 
         ul {
@@ -140,6 +198,11 @@
           font-size: 0.1765rem;
           line-height: 0.2118rem;
           font-weight: 500;
+
+          @media (max-width: 768px) {
+            font-size: 0.07rem;
+            line-height: 0.08rem;
+          }
         }
 
         picture {
@@ -166,6 +229,12 @@
       margin-top: 8.5rem;
       margin-left: 7.5rem;
       animation: 1s lightningFlashAnimation linear infinite;
+
+      @media (max-width: 768px) {
+        width: 1.2rem;
+        margin-top: 1.4rem;
+        margin-left: 0.97rem;
+      }
     }
   }
 
