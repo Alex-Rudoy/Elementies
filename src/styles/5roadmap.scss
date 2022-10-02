@@ -25,6 +25,13 @@
         height: 0.8rem;
         top: 3.85rem;
         left: 14.7rem;
+
+        @media (max-width: 768px) {
+          width: 0.2rem;
+          height: 0.2rem;
+          top: 3.15rem;
+          left: 3.59rem;
+        }
       }
 
       &_2 {
@@ -33,6 +40,10 @@
         top: 4.6rem;
         left: 17.6rem;
         animation-delay: 1s;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
 
       &_3 {
@@ -41,6 +52,10 @@
         top: 6rem;
         left: 16.3rem;
         animation-delay: 2s;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
 
       &_4 {
@@ -49,6 +64,10 @@
         top: 10.3rem;
         left: 1rem;
         animation-delay: 0.5s;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
 
       &_5 {
@@ -57,6 +76,10 @@
         top: 12.1rem;
         left: 1.6rem;
         animation-delay: 1.5s;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
 
       &_6 {
@@ -65,6 +88,10 @@
         top: 13.6rem;
         left: 15.4rem;
         animation-delay: 1.5s;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
 
       &_7 {
@@ -73,6 +100,10 @@
         top: 14.9rem;
         left: 16.5rem;
         animation-delay: 2.5s;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
     }
 
@@ -332,6 +363,13 @@
         top: 5rem;
         left: 15rem;
         animation-delay: 0.5s;
+
+        @media (max-width: 768px) {
+          width: 0.15rem;
+          height: 0.15rem;
+          top: 2.5rem;
+          left: 1.05rem;
+        }
       }
 
       &_2 {
@@ -340,6 +378,13 @@
         top: 7rem;
         left: 17.2rem;
         animation-delay: 2s;
+
+        @media (max-width: 768px) {
+          width: 0.23rem;
+          height: 0.18rem;
+          top: 2.53rem;
+          left: 1.17rem;
+        }
       }
 
       &_3 {
@@ -348,6 +393,10 @@
         top: 11rem;
         left: -0.3rem;
         animation-delay: 0s;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
 
       &_4 {
@@ -356,6 +405,10 @@
         top: 10.7rem;
         left: 4.5rem;
         animation-delay: 1s;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
 
       &_5 {
@@ -364,6 +417,10 @@
         top: 10.9rem;
         left: 5.1rem;
         animation-delay: 2s;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
     }
 
@@ -371,42 +428,41 @@
       position: absolute;
       background: radial-gradient(
         50% 50% at 50% 50%,
-        rgba(101, 224, 247, 0.54) 0%,
+        rgba(101, 224, 247, 0.74) 0%,
         rgba(101, 224, 247, 0.05) 100%
       );
       filter: blur(0.4rem);
       border-radius: 50%;
       animation: glowAnimation 4s ease-in-out infinite;
+      width: 6rem;
+      height: 6rem;
+
+      @media (max-width: 768px) {
+        width: 1rem;
+        height: 1rem;
+      }
 
       &_1 {
-        width: 6rem;
-        height: 6rem;
-        top: 15rem;
-        left: -1rem;
+        top: 4rem;
+        left: 0.2rem;
         animation-delay: 0s;
       }
 
       &_2 {
-        width: 6rem;
-        height: 6rem;
-        top: 16rem;
-        left: 2rem;
+        top: 4.4rem;
+        left: 1.2rem;
         animation-delay: 2s;
       }
 
       &_3 {
-        width: 6rem;
-        height: 6rem;
-        top: 16rem;
-        left: 11rem;
+        top: 4.4rem;
+        left: 2.3rem;
         animation-delay: 3s;
       }
 
       &_4 {
-        width: 6rem;
-        height: 6rem;
-        top: 14rem;
-        left: 14rem;
+        top: 3.9rem;
+        left: 3rem;
         animation-delay: 1s;
       }
     }
