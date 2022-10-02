@@ -379,7 +379,7 @@
         top: 12.1rem;
         left: 3.1rem;
         transform-origin: 0.5rem 0.5rem;
-        animation-duration: 5s;
+        animation-duration: 6s;
 
         .fly {
           width: 0.1rem;
@@ -391,7 +391,7 @@
       &_2 {
         animation-direction: reverse;
         transform-origin: 0.5rem 0.5rem;
-        animation-duration: 4.5s;
+        animation-duration: 5.5s;
         animation-delay: 1s;
         top: 12.3rem;
         left: 4.3rem;
@@ -400,35 +400,38 @@
           width: 0.07rem;
           height: 0.07rem;
           filter: blur(0.02rem);
+          animation-delay: 0.75s;
         }
       }
 
       &_3 {
         top: 12.1rem;
-        left: 3.1rem;
+        left: 4.1rem;
         transform-origin: 0.7rem 0.4rem;
-        animation-duration: 4s;
+        animation-duration: 5s;
         animation-delay: 1.5s;
 
         .fly {
           width: 0.05rem;
           height: 0.05rem;
           filter: blur(0.02rem);
+          animation-delay: 1.5s;
         }
       }
 
       &_4 {
         animation-direction: reverse;
         transform-origin: 0.4rem 0.7rem;
-        animation-duration: 4.8s;
+        animation-duration: 5.8s;
         animation-delay: 2s;
         top: 12.3rem;
-        left: 4.3rem;
+        left: 3.3rem;
 
         .fly {
           width: 0.09rem;
           height: 0.09rem;
           filter: blur(0.02rem);
+          animation-delay: 2.25s;
         }
       }
 
@@ -436,7 +439,7 @@
         top: 12.1rem;
         left: 14.1rem;
         transform-origin: 0.5rem 0.5rem;
-        animation-duration: 5s;
+        animation-duration: 6s;
 
         .fly {
           width: 0.1rem;
@@ -448,7 +451,7 @@
       &_6 {
         animation-direction: reverse;
         transform-origin: 0.5rem 0.5rem;
-        animation-duration: 4.5s;
+        animation-duration: 5.5s;
         animation-delay: 1s;
         top: 12.7rem;
         left: 15.8rem;
@@ -457,6 +460,7 @@
           width: 0.07rem;
           height: 0.07rem;
           filter: blur(0.02rem);
+          animation-delay: 0.75s;
         }
       }
 
@@ -464,20 +468,21 @@
         top: 12.1rem;
         left: 15rem;
         transform-origin: 0.7rem 0.4rem;
-        animation-duration: 4s;
+        animation-duration: 5s;
         animation-delay: 1.5s;
 
         .fly {
           width: 0.05rem;
           height: 0.05rem;
           filter: blur(0.02rem);
+          animation-delay: 1.5s;
         }
       }
 
       &_8 {
         animation-direction: reverse;
         transform-origin: 0.4rem 0.7rem;
-        animation-duration: 4.8s;
+        animation-duration: 5.8s;
         animation-delay: 2s;
         top: 12.3rem;
         left: 14.3rem;
@@ -486,6 +491,7 @@
           width: 0.09rem;
           height: 0.09rem;
           filter: blur(0.02rem);
+          animation-delay: 2.25s;
         }
       }
 
