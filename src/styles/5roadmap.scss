@@ -109,14 +109,14 @@
 
     .shroomFlies {
       position: absolute;
-      animation: shroomFliesAnimation linear infinite;
+      animation: flyOpacityAnimation 3s ease-in-out infinite;
 
       @media (max-width: 768px) {
         display: none;
       }
 
       .fly {
-        animation: flyOpacityAnimation 3s ease-in-out infinite;
+        animation: shroomFliesAnimation linear infinite;
         border-radius: 50%;
         background: #00dfe7;
       }
@@ -124,28 +124,28 @@
       &_1 {
         top: 3.85rem;
         left: 14.8rem;
-        transform-origin: 0.2rem 0.2rem;
-        animation-duration: 5s;
 
         .fly {
           width: 0.08rem;
           height: 0.08rem;
           filter: blur(0.03rem);
+          transform-origin: 0.2rem 0.2rem;
+          animation-duration: 5s;
         }
       }
 
       &_2 {
-        animation-direction: reverse;
-        transform-origin: 0.2rem 0.3rem;
-        animation-duration: 4.5s;
-        animation-delay: 1.5s;
         top: 3.95rem;
         left: 14.7rem;
+        animation-delay: 1.5s;
 
         .fly {
           width: 0.05rem;
           height: 0.05rem;
           filter: blur(0.02rem);
+          animation-direction: reverse;
+          transform-origin: 0.2rem 0.3rem;
+          animation-duration: 4.5s;
           animation-delay: 1.5s;
         }
       }
@@ -153,30 +153,30 @@
       &_3 {
         top: 4.6rem;
         left: 17.7rem;
-        transform-origin: 0.3rem 0.25rem;
-        animation-duration: 4.5s;
         animation-delay: 0.5s;
 
         .fly {
           width: 0.08rem;
           height: 0.08rem;
           filter: blur(0.02rem);
+          transform-origin: 0.3rem 0.25rem;
+          animation-duration: 4.5s;
           animation-delay: 0.5s;
         }
       }
 
       &_4 {
-        animation-direction: reverse;
-        transform-origin: 0.25rem 0.35rem;
-        animation-duration: 5.1s;
-        animation-delay: 2s;
         top: 4.7rem;
         left: 17.6rem;
+        animation-delay: 2s;
 
         .fly {
           width: 0.1rem;
           height: 0.1rem;
           filter: blur(0.02rem);
+          animation-direction: reverse;
+          transform-origin: 0.25rem 0.35rem;
+          animation-duration: 5.1s;
           animation-delay: 2s;
         }
       }
@@ -184,30 +184,30 @@
       &_5 {
         top: 6rem;
         left: 16.4rem;
-        transform-origin: 0.15rem 0.2rem;
-        animation-duration: 4s;
         animation-delay: 1s;
 
         .fly {
           width: 0.05rem;
           height: 0.05rem;
           filter: blur(0.03rem);
+          transform-origin: 0.15rem 0.2rem;
+          animation-duration: 4s;
           animation-delay: 1s;
         }
       }
 
       &_6 {
-        animation-direction: reverse;
-        transform-origin: 0.2rem 0.15rem;
-        animation-duration: 4.5s;
-        animation-delay: 2.5s;
         top: 6.1rem;
         left: 16.3rem;
+        animation-delay: 2.5s;
 
         .fly {
           width: 0.07rem;
           height: 0.07rem;
           filter: blur(0.02rem);
+          animation-direction: reverse;
+          transform-origin: 0.2rem 0.15rem;
+          animation-duration: 4.5s;
           animation-delay: 2.5s;
         }
       }
@@ -215,28 +215,28 @@
       &_7 {
         top: 10.3rem;
         left: 1.1rem;
-        transform-origin: 0.15rem 0.15rem;
-        animation-duration: 4.4s;
 
         .fly {
           width: 0.06rem;
           height: 0.06rem;
           filter: blur(0.02rem);
+          transform-origin: 0.15rem 0.15rem;
+          animation-duration: 4.4s;
         }
       }
 
       &_8 {
-        animation-direction: reverse;
-        transform-origin: 0.15rem 0.2rem;
-        animation-duration: 4s;
-        animation-delay: 1.5s;
         top: 10.4rem;
         left: 1rem;
+        animation-delay: 1.5s;
 
         .fly {
           width: 0.04rem;
           height: 0.04rem;
           filter: blur(0.02rem);
+          animation-direction: reverse;
+          transform-origin: 0.15rem 0.2rem;
+          animation-duration: 4s;
           animation-delay: 1.5s;
         }
       }
@@ -244,30 +244,30 @@
       &_9 {
         top: 12.1rem;
         left: 1.8rem;
-        transform-origin: 0.25rem 0.35rem;
-        animation-duration: 5s;
         animation-delay: 1s;
 
         .fly {
           width: 0.1rem;
           height: 0.1rem;
           filter: blur(0.02rem);
+          transform-origin: 0.25rem 0.35rem;
+          animation-duration: 5s;
           animation-delay: 1s;
         }
       }
 
       &_10 {
-        animation-direction: reverse;
-        transform-origin: 0.3rem 0.25rem;
-        animation-duration: 4.7s;
-        animation-delay: 2.5s;
         top: 12.2rem;
         left: 1.7rem;
+        animation-delay: 2.5s;
 
         .fly {
           width: 0.08rem;
           height: 0.08rem;
           filter: blur(0.02rem);
+          animation-direction: reverse;
+          transform-origin: 0.3rem 0.25rem;
+          animation-duration: 4.7s;
           animation-delay: 2.5s;
         }
       }
@@ -275,30 +275,30 @@
       &_11 {
         top: 13.6rem;
         left: 15.5rem;
-        transform-origin: 0.25rem 0.2rem;
-        animation-duration: 4s;
         animation-delay: 0.5s;
 
         .fly {
           width: 0.04rem;
           height: 0.04rem;
           filter: blur(0.02rem);
+          transform-origin: 0.25rem 0.2rem;
+          animation-duration: 4s;
           animation-delay: 0.5s;
         }
       }
 
       &_12 {
-        animation-direction: reverse;
-        transform-origin: 0.2rem 0.2rem;
-        animation-duration: 4.6s;
-        animation-delay: 2s;
         top: 13.7rem;
         left: 15.4rem;
+        animation-delay: 2s;
 
         .fly {
           width: 0.07rem;
           height: 0.07rem;
           filter: blur(0.02rem);
+          animation-direction: reverse;
+          transform-origin: 0.2rem 0.2rem;
+          animation-duration: 4.6s;
           animation-delay: 2s;
         }
       }
@@ -306,22 +306,19 @@
       &_13 {
         top: 14.9rem;
         left: 16.7rem;
-        transform-origin: 0.25rem 0.2rem;
-        animation-duration: 4.9s;
         animation-delay: 1.5s;
 
         .fly {
           width: 0.09rem;
           height: 0.09rem;
           filter: blur(0.02rem);
+          transform-origin: 0.25rem 0.2rem;
+          animation-duration: 4.9s;
           animation-delay: 1.5s;
         }
       }
 
       &_14 {
-        animation-direction: reverse;
-        transform-origin: 0.2rem 0.3rem;
-        animation-duration: 4.6s;
         top: 15rem;
         left: 16.6rem;
 
@@ -329,6 +326,9 @@
           width: 0.08rem;
           height: 0.08rem;
           filter: blur(0.02rem);
+          animation-direction: reverse;
+          transform-origin: 0.2rem 0.3rem;
+          animation-duration: 4.6s;
         }
       }
 
@@ -523,51 +523,6 @@
     }
   }
 
-  .sparks {
-    z-index: 3;
-
-    picture {
-      position: absolute;
-      animation: sparksAnimation 3s ease-in-out infinite;
-    }
-
-    .sparks_1 {
-      width: 8.75rem;
-      top: 1.35rem;
-      left: 3.4rem;
-      animation-delay: 0s;
-    }
-
-    .sparks_2 {
-      width: 9.189rem;
-      top: 6.67rem;
-      left: 7.43rem;
-      animation-delay: 1s;
-    }
-
-    .sparks_3 {
-      width: 2.136rem;
-      top: 9.44rem;
-      left: 8.669rem;
-      animation-delay: 2s;
-    }
-
-    @keyframes sparksAnimation {
-      0% {
-        transform: translate3d(0, 0, 0);
-        opacity: 0.8;
-      }
-      50% {
-        transform: translate3d(0, -0.2rem, 0);
-        opacity: 0.3;
-      }
-      100% {
-        transform: translate3d(0, 0, 0);
-        opacity: 0.8;
-      }
-    }
-  }
-
   .bottle {
     z-index: 4;
     mix-blend-mode: lighten;
@@ -661,7 +616,7 @@
         @media (max-width: 768px) {
           width: 1.01rem;
           height: 1.27rem;
-          padding: 0.06rem 0 0 0.07rem;
+          padding: 0.06rem 0 0 0.09rem;
         }
 
         &_heading {
@@ -673,7 +628,7 @@
           @media (max-width: 768px) {
             font-size: 0.08rem;
             line-height: 0.1rem;
-            margin-bottom: 0.04rem;
+            margin-bottom: 0.03rem;
           }
         }
 
@@ -690,6 +645,10 @@
           @media (max-width: 768px) {
             font-size: 0.07rem;
             line-height: 0.08rem;
+
+            span {
+              margin-left: -0.02rem;
+            }
           }
         }
 
