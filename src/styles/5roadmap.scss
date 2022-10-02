@@ -8,6 +8,423 @@
       width: 140%;
       left: -20%;
     }
+
+    .shroomGlow {
+      position: absolute;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(0, 223, 231, 0.74) 0%,
+        rgba(0, 223, 231, 0.15) 100%
+      );
+      filter: blur(0.1rem);
+      border-radius: 50%;
+      animation: glowAnimation 3s ease-in-out infinite;
+
+      &_1 {
+        width: 0.8rem;
+        height: 0.8rem;
+        top: 3.85rem;
+        left: 14.7rem;
+      }
+
+      &_2 {
+        width: 1rem;
+        height: 1rem;
+        top: 4.6rem;
+        left: 17.6rem;
+        animation-delay: 1s;
+      }
+
+      &_3 {
+        width: 0.7rem;
+        height: 0.7rem;
+        top: 6rem;
+        left: 16.3rem;
+        animation-delay: 2s;
+      }
+
+      &_4 {
+        width: 0.7rem;
+        height: 0.7rem;
+        top: 10.3rem;
+        left: 1rem;
+        animation-delay: 0.5s;
+      }
+
+      &_5 {
+        width: 1.1rem;
+        height: 0.7rem;
+        top: 12.1rem;
+        left: 1.6rem;
+        animation-delay: 1.5s;
+      }
+
+      &_6 {
+        width: 0.7rem;
+        height: 0.7rem;
+        top: 13.6rem;
+        left: 15.4rem;
+        animation-delay: 1.5s;
+      }
+
+      &_7 {
+        width: 1.2rem;
+        height: 1.2rem;
+        top: 14.9rem;
+        left: 16.5rem;
+        animation-delay: 2.5s;
+      }
+    }
+
+    .shroomFlies {
+      position: absolute;
+      animation: shroomFliesAnimation linear infinite;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+
+      .fly {
+        animation: flyOpacityAnimation 3s ease-in-out infinite;
+        border-radius: 50%;
+        background: #00dfe7;
+      }
+
+      &_1 {
+        top: 3.85rem;
+        left: 14.8rem;
+        transform-origin: 0.2rem 0.2rem;
+        animation-duration: 5s;
+
+        .fly {
+          width: 0.08rem;
+          height: 0.08rem;
+          filter: blur(0.03rem);
+        }
+      }
+
+      &_2 {
+        animation-direction: reverse;
+        transform-origin: 0.2rem 0.3rem;
+        animation-duration: 4.5s;
+        animation-delay: 1.5s;
+        top: 3.95rem;
+        left: 14.7rem;
+
+        .fly {
+          width: 0.05rem;
+          height: 0.05rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_3 {
+        top: 4.6rem;
+        left: 17.7rem;
+        transform-origin: 0.3rem 0.25rem;
+        animation-duration: 4.5s;
+        animation-delay: 0.5s;
+
+        .fly {
+          width: 0.08rem;
+          height: 0.08rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_4 {
+        animation-direction: reverse;
+        transform-origin: 0.25rem 0.35rem;
+        animation-duration: 5.1s;
+        animation-delay: 2s;
+        top: 4.7rem;
+        left: 17.6rem;
+
+        .fly {
+          width: 0.1rem;
+          height: 0.1rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_5 {
+        top: 6rem;
+        left: 16.4rem;
+        transform-origin: 0.15rem 0.2rem;
+        animation-duration: 4s;
+        animation-delay: 1s;
+
+        .fly {
+          width: 0.05rem;
+          height: 0.05rem;
+          filter: blur(0.03rem);
+        }
+      }
+
+      &_6 {
+        animation-direction: reverse;
+        transform-origin: 0.2rem 0.15rem;
+        animation-duration: 4.5s;
+        animation-delay: 2.5s;
+        top: 6.1rem;
+        left: 16.3rem;
+
+        .fly {
+          width: 0.07rem;
+          height: 0.07rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_7 {
+        top: 10.3rem;
+        left: 1.1rem;
+        transform-origin: 0.15rem 0.15rem;
+        animation-duration: 4.4s;
+
+        .fly {
+          width: 0.06rem;
+          height: 0.06rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_8 {
+        animation-direction: reverse;
+        transform-origin: 0.15rem 0.2rem;
+        animation-duration: 4s;
+        animation-delay: 1.5s;
+        top: 10.4rem;
+        left: 1rem;
+
+        .fly {
+          width: 0.04rem;
+          height: 0.04rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_9 {
+        top: 12.1rem;
+        left: 1.8rem;
+        transform-origin: 0.25rem 0.35rem;
+        animation-duration: 5s;
+        animation-delay: 1s;
+
+        .fly {
+          width: 0.1rem;
+          height: 0.1rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_10 {
+        animation-direction: reverse;
+        transform-origin: 0.3rem 0.25rem;
+        animation-duration: 4.7s;
+        animation-delay: 2.5s;
+        top: 12.2rem;
+        left: 1.7rem;
+
+        .fly {
+          width: 0.08rem;
+          height: 0.08rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_11 {
+        top: 13.6rem;
+        left: 15.5rem;
+        transform-origin: 0.25rem 0.2rem;
+        animation-duration: 4s;
+        animation-delay: 0.5s;
+
+        .fly {
+          width: 0.04rem;
+          height: 0.04rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_12 {
+        animation-direction: reverse;
+        transform-origin: 0.2rem 0.2rem;
+        animation-duration: 4.6s;
+        animation-delay: 2s;
+        top: 13.7rem;
+        left: 15.4rem;
+
+        .fly {
+          width: 0.07rem;
+          height: 0.07rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_13 {
+        top: 14.9rem;
+        left: 16.7rem;
+        transform-origin: 0.25rem 0.2rem;
+        animation-duration: 4.9s;
+        animation-delay: 1.5s;
+
+        .fly {
+          width: 0.09rem;
+          height: 0.09rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_14 {
+        animation-direction: reverse;
+        transform-origin: 0.2rem 0.3rem;
+        animation-duration: 4.6s;
+        top: 15rem;
+        left: 16.6rem;
+
+        .fly {
+          width: 0.08rem;
+          height: 0.08rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      @keyframes shroomFliesAnimation {
+        0% {
+          transform: rotate(0deg) translate3d(0, 0, 0);
+        }
+        100% {
+          transform: rotate(360deg) translate3d(0, 0, 0);
+        }
+      }
+
+      @keyframes flyOpacityAnimation {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 0, 0);
+        }
+        50% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          opacity: 0;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+    }
+
+    .redCrystalGlow {
+      position: absolute;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(217, 143, 221, 0.74) 0%,
+        rgba(217, 143, 221, 0.15) 100%
+      );
+      filter: blur(0.1rem);
+      border-radius: 50%;
+      animation: glowAnimation 3s ease-in-out infinite;
+
+      &_1 {
+        width: 0.8rem;
+        height: 2rem;
+        top: 5rem;
+        left: 15rem;
+        animation-delay: 0.5s;
+      }
+
+      &_2 {
+        width: 1.4rem;
+        height: 1.4rem;
+        top: 7rem;
+        left: 17.2rem;
+        animation-delay: 2s;
+      }
+
+      &_3 {
+        width: 1.5rem;
+        height: 1.5rem;
+        top: 11rem;
+        left: -0.3rem;
+        animation-delay: 0s;
+      }
+
+      &_4 {
+        width: 0.6rem;
+        height: 0.6rem;
+        top: 10.7rem;
+        left: 4.5rem;
+        animation-delay: 1s;
+      }
+
+      &_5 {
+        width: 0.9rem;
+        height: 0.7rem;
+        top: 10.9rem;
+        left: 5.1rem;
+        animation-delay: 2s;
+      }
+    }
+
+    .footerCrystalGlow {
+      position: absolute;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(101, 224, 247, 0.54) 0%,
+        rgba(101, 224, 247, 0.05) 100%
+      );
+      filter: blur(0.4rem);
+      border-radius: 50%;
+      animation: glowAnimation 4s ease-in-out infinite;
+
+      &_1 {
+        width: 6rem;
+        height: 6rem;
+        top: 15rem;
+        left: -1rem;
+        animation-delay: 0s;
+      }
+
+      &_2 {
+        width: 6rem;
+        height: 6rem;
+        top: 16rem;
+        left: 2rem;
+        animation-delay: 2s;
+      }
+
+      &_3 {
+        width: 6rem;
+        height: 6rem;
+        top: 16rem;
+        left: 11rem;
+        animation-delay: 3s;
+      }
+
+      &_4 {
+        width: 6rem;
+        height: 6rem;
+        top: 14rem;
+        left: 14rem;
+        animation-delay: 1s;
+      }
+    }
+
+    @keyframes glowAnimation {
+      0% {
+        opacity: 0.2;
+        transform: translate3d(0, 0, 0);
+      }
+      50% {
+        opacity: 0.8;
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        opacity: 0.2;
+        transform: translate3d(0, 0, 0);
+      }
+    }
   }
 
   .fog {
@@ -25,12 +442,15 @@
       @keyframes fogAnimation {
         0% {
           opacity: 1;
+          transform: translate3d(0, 0, 0);
         }
         50% {
           opacity: 0.5;
+          transform: translate3d(0, 0, 0);
         }
         100% {
           opacity: 1;
+          transform: translate3d(0, 0, 0);
         }
       }
     }
@@ -67,15 +487,15 @@
 
     @keyframes sparksAnimation {
       0% {
-        transform: translate(0, 0);
+        transform: translate3d(0, 0, 0);
         opacity: 0.8;
       }
       50% {
-        transform: translate(0, -0.2rem);
+        transform: translate3d(0, -0.2rem, 0);
         opacity: 0.3;
       }
       100% {
-        transform: translate(0, 0);
+        transform: translate3d(0, 0, 0);
         opacity: 0.8;
       }
     }
@@ -99,7 +519,7 @@
     }
   }
 
-  .particles {
+  .light {
     z-index: 5;
 
     .lightBehindPaper {
@@ -108,7 +528,7 @@
         rgba(114, 201, 201, 0.74) 0%,
         rgba(114, 201, 201, 0.15) 100%
       );
-      filter: blur(50px);
+      filter: blur(0.5rem);
       border-radius: 50%;
       width: 6rem;
       height: 6rem;
@@ -242,12 +662,15 @@
   @keyframes lightningFlashAnimation {
     0% {
       opacity: 0.8;
+      transform: translate3d(0, 0, 0);
     }
     50% {
       opacity: 1;
+      transform: translate3d(0, 0, 0);
     }
     100% {
       opacity: 0.8;
+      transform: translate3d(0, 0, 0);
     }
   }
 }

@@ -119,11 +119,11 @@
 
       @keyframes thinCloudsAnimation {
         0% {
-          transform: rotate(20deg);
+          transform: rotate(20deg) translate3d(0, 0, 0);
         }
 
         100% {
-          transform: rotate(-20deg);
+          transform: rotate(-20deg) translate3d(0, 0, 0);
         }
       }
     }
@@ -174,15 +174,22 @@
       animation: tailAnimation 4s ease-in-out infinite;
       transform-origin: 0.5rem 0.5rem;
 
+      @media (max-width: 768px) {
+        top: 9.9rem;
+        left: 1.54rem;
+        width: 0.5rem;
+        transform-origin: 0.08rem 0.08rem;
+      }
+
       @keyframes tailAnimation {
         0% {
-          transform: rotate(0);
+          transform: rotate(0) translate3d(0, 0, 0);
         }
         50% {
-          transform: rotate(-10deg);
+          transform: rotate(-10deg) translate3d(0, 0, 0);
         }
         100% {
-          transform: rotate(0);
+          transform: rotate(0) translate3d(0, 0, 0);
         }
       }
     }
@@ -195,12 +202,17 @@
       animation: leafFlightAnimation 3s ease-out infinite;
 
       @media (max-width: 768px) {
-        display: none;
+        top: 9rem;
+        left: 0.4rem;
+        transform-origin: 1rem -1rem;
       }
 
       @keyframes leafFlightAnimation {
+        0% {
+          transform: rotate(0deg) translate3d(0, 0, 0);
+        }
         100% {
-          transform: rotate(-40deg);
+          transform: rotate(-40deg) translate3d(0, 0, 0);
         }
       }
 
@@ -214,14 +226,21 @@
         @keyframes leafAnimation {
           0% {
             opacity: 0;
+            transform: translate3d(0, 0, 0);
           }
           40% {
             opacity: 1;
+            transform: translate3d(0, 0, 0);
           }
           100% {
-            transform: rotate(250deg);
+            transform: rotate(250deg) translate3d(0, 0, 0);
             opacity: 0;
           }
+        }
+
+        @media (max-width: 768px) {
+          width: 0.05rem;
+          height: 0.05rem;
         }
       }
 
@@ -229,6 +248,11 @@
         animation-delay: 1.3s;
         top: 9.6rem;
         left: 3rem;
+
+        @media (max-width: 768px) {
+          top: 8.96rem;
+          left: 0.52rem;
+        }
 
         .leaf {
           animation-delay: 1.3s;
@@ -240,6 +264,11 @@
         top: 9.4rem;
         left: 3.5rem;
 
+        @media (max-width: 768px) {
+          top: 8.94rem;
+          left: 0.6rem;
+        }
+
         .leaf {
           animation-delay: 2.1s;
         }
@@ -250,6 +279,11 @@
         top: 9.3rem;
         left: 4rem;
 
+        @media (max-width: 768px) {
+          top: 8.9rem;
+          left: 0.7rem;
+        }
+
         .leaf {
           animation-delay: 0.5s;
         }
@@ -257,21 +291,225 @@
 
       &_5 {
         animation-delay: 1.7s;
-        top: 9.4rem;
-        left: 4.5rem;
+        top: 10.6rem;
+        left: 2rem;
+
+        @media (max-width: 768px) {
+          top: 9.2rem;
+          left: 0.3rem;
+        }
 
         .leaf {
           animation-delay: 1.7s;
         }
       }
+    }
+
+    .shroomGlow {
+      position: absolute;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(0, 223, 231, 0.74) 0%,
+        rgba(0, 223, 231, 0.15) 100%
+      );
+      filter: blur(0.5rem);
+      border-radius: 50%;
+      animation: shroomGlowAnimation 3s ease-in-out infinite;
+
+      &_1 {
+        width: 2rem;
+        height: 2rem;
+        top: 12.1rem;
+        left: 3.1rem;
+
+        @media (max-width: 768px) {
+          width: 0.4rem;
+          height: 0.4rem;
+          top: 9.4rem;
+          left: 0.5rem;
+        }
+      }
+
+      &_2 {
+        width: 2.5rem;
+        height: 2.5rem;
+        top: 12.3rem;
+        left: 14.1rem;
+        animation-delay: 1s;
+
+        @media (max-width: 768px) {
+          width: 0.5rem;
+          height: 0.5rem;
+          top: 9.4rem;
+          left: 2.3rem;
+        }
+      }
+
+      @keyframes shroomGlowAnimation {
+        0% {
+          opacity: 0.2;
+          transform: translate3d(0, 0, 0);
+        }
+        50% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          opacity: 0.2;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+    }
+
+    .shroomFlies {
+      position: absolute;
+      animation: shroomFliesAnimation linear infinite;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+
+      .fly {
+        animation: flyOpacityAnimation 3s ease-in-out infinite;
+        border-radius: 50%;
+        background: #00dfe7;
+      }
+
+      &_1 {
+        top: 12.1rem;
+        left: 3.1rem;
+        transform-origin: 0.5rem 0.5rem;
+        animation-duration: 5s;
+
+        .fly {
+          width: 0.1rem;
+          height: 0.1rem;
+          filter: blur(0.03rem);
+        }
+      }
+
+      &_2 {
+        animation-direction: reverse;
+        transform-origin: 0.5rem 0.5rem;
+        animation-duration: 4.5s;
+        animation-delay: 1s;
+        top: 12.3rem;
+        left: 4.3rem;
+
+        .fly {
+          width: 0.07rem;
+          height: 0.07rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_3 {
+        top: 12.1rem;
+        left: 3.1rem;
+        transform-origin: 0.7rem 0.4rem;
+        animation-duration: 4s;
+        animation-delay: 1.5s;
+
+        .fly {
+          width: 0.05rem;
+          height: 0.05rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_4 {
+        animation-direction: reverse;
+        transform-origin: 0.4rem 0.7rem;
+        animation-duration: 4.8s;
+        animation-delay: 2s;
+        top: 12.3rem;
+        left: 4.3rem;
+
+        .fly {
+          width: 0.09rem;
+          height: 0.09rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_5 {
+        top: 12.1rem;
+        left: 14.1rem;
+        transform-origin: 0.5rem 0.5rem;
+        animation-duration: 5s;
+
+        .fly {
+          width: 0.1rem;
+          height: 0.1rem;
+          filter: blur(0.03rem);
+        }
+      }
 
       &_6 {
-        animation-delay: 1.7s;
-        top: 10.6rem;
-        left: 2rem;
+        animation-direction: reverse;
+        transform-origin: 0.5rem 0.5rem;
+        animation-duration: 4.5s;
+        animation-delay: 1s;
+        top: 12.7rem;
+        left: 15.8rem;
 
-        .leaf {
-          animation-delay: 1.7s;
+        .fly {
+          width: 0.07rem;
+          height: 0.07rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_7 {
+        top: 12.1rem;
+        left: 15rem;
+        transform-origin: 0.7rem 0.4rem;
+        animation-duration: 4s;
+        animation-delay: 1.5s;
+
+        .fly {
+          width: 0.05rem;
+          height: 0.05rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      &_8 {
+        animation-direction: reverse;
+        transform-origin: 0.4rem 0.7rem;
+        animation-duration: 4.8s;
+        animation-delay: 2s;
+        top: 12.3rem;
+        left: 14.3rem;
+
+        .fly {
+          width: 0.09rem;
+          height: 0.09rem;
+          filter: blur(0.02rem);
+        }
+      }
+
+      @keyframes shroomFliesAnimation {
+        0% {
+          transform: rotate(0deg) translate3d(0, 0, 0);
+        }
+        100% {
+          transform: rotate(360deg) translate3d(0, 0, 0);
+        }
+      }
+
+      @keyframes flyOpacityAnimation {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 0, 0);
+        }
+        50% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          opacity: 0;
+          transform: translate3d(0, 0, 0);
         }
       }
     }
@@ -477,7 +715,7 @@
 
     .crystal {
       position: absolute;
-      animation: crystalBounce 1.5s ease-in-out infinite;
+      animation: crystalBounce 2s ease-in-out infinite;
 
       &_1 {
         top: -1.06rem;
@@ -561,26 +799,26 @@
 
       @keyframes crystalBounce {
         0% {
-          transform: translateY(0);
+          transform: translate3d(0, 0, 0);
         }
         50% {
-          transform: translateY(0.15rem);
+          transform: translate3d(0, 0.15rem, 0);
         }
         100% {
-          transform: translateY(0);
+          transform: translate3d(0, 0, 0);
         }
       }
 
       @media (max-width: 768px) {
         @keyframes crystalBounce {
           0% {
-            transform: translateY(0);
+            transform: translate3d(0, 0, 0);
           }
           50% {
-            transform: translateY(0.05rem);
+            transform: translate3d(0, 0.05rem, 0);
           }
           100% {
-            transform: translateY(0);
+            transform: translate3d(0, 0, 0);
           }
         }
       }
@@ -592,15 +830,15 @@
 
         @keyframes shimmerBounce {
           0% {
-            transform: translateY(0);
+            transform: translate3d(0, 0, 0);
             opacity: 0.8;
           }
           50% {
-            transform: translateY(0.15rem);
+            transform: translate3d(0, 0.15rem, 0);
             opacity: 0.3;
           }
           100% {
-            transform: translateY(0);
+            transform: translate3d(0, 0, 0);
             opacity: 0.8;
           }
         }
@@ -608,15 +846,15 @@
         @media (max-width: 768px) {
           @keyframes shimmerBounce {
             0% {
-              transform: translateY(0);
+              transform: translate3d(0, 0, 0);
               opacity: 0.8;
             }
             50% {
-              transform: translateY(0.05rem);
+              transform: translate3d(0, 0.05rem, 0);
               opacity: 0.3;
             }
             100% {
-              transform: translateY(0);
+              transform: translate3d(0, 0, 0);
               opacity: 0.8;
             }
           }
