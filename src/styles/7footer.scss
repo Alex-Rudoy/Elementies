@@ -15,37 +15,81 @@ footer {
   color: #6edcff;
   font-size: 0.12rem;
   line-height: 0.14rem;
+
   @media (max-width: 768px) {
-    display: none;
+    height: 0.61rem;
+    background: linear-gradient(
+      #002c48 0.02rem,
+      #00436b 0.03rem,
+      #00436b 0.04rem,
+      #003c60 0.04rem
+    );
+    font-size: 0.06rem;
+    line-height: 0.07rem;
+    flex-wrap: wrap;
+    padding: 0.05rem 0.15rem;
   }
 
   .logo {
     width: 1.727rem;
     margin-right: 0.175rem;
+
+    @media (max-width: 768px) {
+      width: 0.97rem;
+      margin-right: 0.18rem;
+    }
   }
 
   .copyright {
     display: flex;
     flex-direction: column;
     margin-right: 1.025rem;
+
+    @media (max-width: 768px) {
+      flex-direction: row;
+      order: 10;
+      width: 100%;
+      margin-right: 0;
+      gap: 0.01rem;
+    }
   }
 
   .subscribe {
     display: flex;
     margin-right: 0.15rem;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
     p {
       margin-top: 0.1rem;
       margin-right: 0.1rem;
+
+      @media (max-width: 768px) {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0.05rem;
+      }
     }
   }
 
   .poweredBy {
     display: flex;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
     p {
       margin-top: 0.1rem;
       margin-right: 0.1rem;
+
+      @media (max-width: 768px) {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0.05rem;
+      }
     }
   }
 
@@ -55,6 +99,10 @@ footer {
 
     picture {
       width: 0.48rem;
+
+      @media (max-width: 768px) {
+        width: 0.24rem;
+      }
     }
   }
 
@@ -64,6 +112,10 @@ footer {
     height: 0.15rem;
     max-width: 50%;
     overflow: hidden;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
 
     &_1 {
       left: 0;

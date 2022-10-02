@@ -1,66 +1,8 @@
 .partners {
   z-index: 2;
-  @media (max-width: 768px) {
-    display: none;
-  }
 
-  .light {
+  .particles {
     z-index: 2;
-
-    picture {
-      margin-top: -0.48rem;
-      animation: crystalLightAnimation 3s ease-in-out infinite;
-
-      @keyframes crystalLightAnimation {
-        0% {
-          opacity: 0.3;
-        }
-        50% {
-          opacity: 0.8;
-        }
-        100% {
-          opacity: 0.3;
-        }
-      }
-    }
-  }
-
-  .sparks {
-    z-index: 3;
-
-    > picture {
-      position: absolute;
-      animation: crystalSparksAnimation 3s ease-in-out infinite;
-    }
-
-    .sparks_1 {
-      width: 2.58rem;
-      top: 2.54rem;
-      left: 0.28rem;
-      animation-delay: 1s;
-    }
-
-    .sparks_2 {
-      width: 3.14rem;
-      top: 2.16rem;
-      left: 14.95rem;
-      animation-delay: 2s;
-    }
-
-    @keyframes crystalSparksAnimation {
-      0% {
-        transform: translate(0, 0);
-        opacity: 0.3;
-      }
-      50% {
-        transform: translate(0, -0.2rem);
-        opacity: 0.8;
-      }
-      100% {
-        transform: translate(0, 0);
-        opacity: 0.3;
-      }
-    }
   }
 
   .crystals {
@@ -68,6 +10,10 @@
 
     picture {
       margin-top: 1.92rem;
+
+      @media (max-width: 768px) {
+        margin-top: 1.05rem;
+      }
     }
   }
 
@@ -85,6 +31,13 @@
       color: #9fd2fd;
       text-shadow: 0 0.01rem 0.2rem #095064;
       margin-bottom: 0.21rem;
+
+      @media (max-width: 768px) {
+        font-size: 0.1rem;
+        line-height: 0.13rem;
+        margin-bottom: 0.08rem;
+        text-shadow: 0 0 0.04rem #095064;
+      }
     }
 
     .partnersGrid {
@@ -93,6 +46,12 @@
       grid-gap: 0.7rem 1rem;
       width: min-content;
       margin-bottom: 1.1rem;
+
+      @media (max-width: 768px) {
+        grid-template-columns: 0.6rem 0.45rem 0.6rem;
+        grid-gap: 0.23rem 0.15rem;
+        margin-bottom: 0.35rem;
+      }
 
       .partner {
         width: 100%;
@@ -104,12 +63,21 @@
       .partner_2 {
         position: relative;
         top: -0.1rem;
+
+        @media (max-width: 768px) {
+          top: -0.02rem;
+        }
       }
     }
 
     .quantum {
       width: 2.5rem;
       margin-bottom: 1.1rem;
+
+      @media (max-width: 768px) {
+        width: 0.8rem;
+        margin-bottom: 0.2rem;
+      }
     }
   }
 }
