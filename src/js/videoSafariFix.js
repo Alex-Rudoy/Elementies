@@ -1,11 +1,12 @@
 const videos = document.querySelectorAll("video");
+const thumbnails = document.querySelectorAll(".thumbnail");
 let triggered = false;
 
 const playVideo = async () => {
   if (triggered) return;
   try {
     await Promise.all([...videos].map((video) => video.play()));
-    document.querySelectorAll(".videoThumbnail").forEach((img) => img.remove());
+    [...thumbnails].forEach((img) => img.remove());
   } catch (e) {
     // do nothing
   }

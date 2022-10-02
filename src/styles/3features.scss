@@ -545,6 +545,15 @@
     }
   }
 
+  .thumbnail {
+    mix-blend-mode: unset;
+
+    img {
+      transform: scale(0.87);
+      transform-origin: 50% 0;
+    }
+  }
+
   .scrolls {
     z-index: 5;
     position: relative;
