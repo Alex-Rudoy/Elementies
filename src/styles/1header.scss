@@ -42,6 +42,7 @@ header {
   .socialLinks {
     display: flex;
     gap: 0.05rem;
+    margin-left: 0.85rem;
 
     @media (max-width: 768px) {
       display: none;
