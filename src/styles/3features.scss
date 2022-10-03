@@ -537,6 +537,7 @@
     right: 4rem;
     width: 2.05rem;
     mix-blend-mode: lighten;
+    opacity: 0;
 
     @media (max-width: 768px) {
       top: -1.39rem;
@@ -547,6 +548,7 @@
 
   .thumbnail {
     mix-blend-mode: unset;
+    opacity: 1;
 
     img {
       transform: scale(0.87);
@@ -567,7 +569,7 @@
       flex-direction: column;
       align-items: center;
       padding: 0.36rem 0.26rem 0 0.38rem;
-      margin-left: 5.73rem;
+      margin-left: 5.23rem;
       margin-bottom: 1.2rem;
 
       @media (max-width: 768px) {
@@ -652,7 +654,7 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 0.42rem 0.13rem;
       width: min-content;
-      margin-left: 5.6rem;
+      margin-left: 5.1rem;
 
       @media (max-width: 768px) {
         grid-template-columns: 1fr 1fr;
@@ -704,7 +706,7 @@
 
       &_1 {
         top: -1.06rem;
-        left: 2.51rem;
+        left: 2.01rem;
         width: 3.82rem;
         height: 4.34rem;
         animation-delay: 0s;
@@ -720,7 +722,7 @@
 
       &_2 {
         top: -2.29rem;
-        left: 3.9rem;
+        left: 3.4rem;
         width: 2.21rem;
         height: 2.28rem;
         animation-delay: 0.4s;
@@ -736,7 +738,7 @@
 
       &_3 {
         top: 0.21rem;
-        left: 10.6rem;
+        left: 10.1rem;
         width: 0.4rem;
         height: 0.4rem;
         animation-delay: 0.2s;
@@ -752,7 +754,7 @@
 
       &_4 {
         top: 1.75rem;
-        left: 10rem;
+        left: 9.5rem;
         width: 2.21rem;
         height: 2.28rem;
         animation-delay: 0.6s;
@@ -768,7 +770,7 @@
 
       &_5 {
         top: 2.33rem;
-        left: 9.38rem;
+        left: 8.88rem;
         width: 2.21rem;
         height: 2.28rem;
         animation-delay: 0.3s;

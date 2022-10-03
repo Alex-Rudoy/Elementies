@@ -6,7 +6,8 @@ const playVideo = async () => {
   if (triggered) return;
   try {
     await Promise.all([...videos].map((video) => video.play()));
-    [...thumbnails].forEach((img) => img.remove());
+    [...thumbnails].forEach((img) => (img.style.opacity = 0));
+    [...videos].forEach((img) => (img.style.opacity = 1));
   } catch (e) {
     // do nothing
   }

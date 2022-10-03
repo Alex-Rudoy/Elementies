@@ -554,6 +554,7 @@
       top: 6.9rem;
       left: 2.8rem;
       transform: scaleX(1.35);
+      opacity: 0;
 
       @media (max-width: 768px) {
         width: 0.58rem;
@@ -564,6 +565,7 @@
 
     .thumbnail {
       z-index: 3;
+      opacity: 1;
     }
   }
 

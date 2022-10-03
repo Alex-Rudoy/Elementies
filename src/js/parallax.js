@@ -8,31 +8,35 @@ const close2 = document.querySelectorAll(".parallax_close_2");
 const close3 = document.querySelectorAll(".parallax_close_3");
 
 const applyParallax = (bg, coefficient) => {
-  const section = bg.parentElement;
-  const sectionY = section.getBoundingClientRect().top;
-  let offset = -sectionY / coefficient;
-  if (bg.classList.contains("hills")) {
-    if (window.innerWidth > 768) {
-      offset = Math.min(offset, 0);
-    } else {
-      offset = Math.min(offset, 32);
+  try {
+    const section = bg.parentElement;
+    const sectionY = section.getBoundingClientRect().top;
+    let offset = -sectionY / coefficient;
+    if (bg.classList.contains("hills")) {
+      if (window.innerWidth > 768) {
+        offset = Math.min(offset, 0);
+      } else {
+        offset = Math.min(offset, 32);
+      }
     }
-  }
-  if (bg.classList.contains("mountain")) {
-    if (window.innerWidth > 768) {
-      offset = Math.min(offset, 67);
-    } else {
-      offset = Math.min(offset, 130);
+    if (bg.classList.contains("mountain")) {
+      if (window.innerWidth > 768) {
+        offset = Math.min(offset, 67);
+      } else {
+        offset = Math.min(offset, 130);
+      }
     }
-  }
-  if (bg.classList.contains("stones")) {
-    if (window.innerWidth > 768) {
-      offset = Math.min(offset, -10);
-    } else {
-      offset = Math.min(offset, 4);
+    if (bg.classList.contains("stones")) {
+      if (window.innerWidth > 768) {
+        offset = Math.min(offset, -10);
+      } else {
+        offset = Math.min(offset, 4);
+      }
     }
+    bg.style.transform = `translateY(${offset}px)`;
+  } catch (error) {
+    // do nothing, catch for disappearing waterfall images
   }
-  bg.style.transform = `translateY(${offset}px)`;
 };
 
 const parallaxEffect = () => {
