@@ -46,6 +46,11 @@ section {
   }
 }
 
+img,
+picture {
+  transform: translate3d(0, 0, 0);
+}
+
 [class*="parallax"] {
   pointer-events: none;
 }

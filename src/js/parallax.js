@@ -61,6 +61,6 @@ const parallaxEffect = () => {
 
 setTimeout(parallaxEffect, 1000);
 
-const throttledParallaxEffect = throttle(parallaxEffect, 100);
+const throttledParallaxEffect = throttle(parallaxEffect, 50);
 
 window.addEventListener("scroll", throttledParallaxEffect);
