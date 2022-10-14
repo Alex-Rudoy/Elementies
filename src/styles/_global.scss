@@ -51,7 +51,7 @@ picture {
   transform: translate3d(0, 0, 0);
 }
 
-[class*="parallax"] {
+section > * {
   pointer-events: none;
 }
 

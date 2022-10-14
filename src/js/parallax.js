@@ -2,10 +2,10 @@ import { throttle } from "./throttle";
 
 const far1 = document.querySelectorAll(".parallax_far_1");
 const far2 = document.querySelectorAll(".parallax_far_2");
-const far3 = document.querySelectorAll(".parallax_far_3");
+// const far3 = document.querySelectorAll(".parallax_far_3");
 const close1 = document.querySelectorAll(".parallax_close_1");
 const close2 = document.querySelectorAll(".parallax_close_2");
-const close3 = document.querySelectorAll(".parallax_close_3");
+// const close3 = document.querySelectorAll(".parallax_close_3");
 
 const applyParallax = (bg, coefficient) => {
   try {
@@ -44,18 +44,18 @@ const parallaxEffect = () => {
     // desktop
     far1?.forEach((bg) => applyParallax(bg, 12));
     far2?.forEach((bg) => applyParallax(bg, 8));
-    far3?.forEach((bg) => applyParallax(bg, 4));
+    // far3?.forEach((bg) => applyParallax(bg, 4));
     close1?.forEach((bg) => applyParallax(bg, -12));
     close2?.forEach((bg) => applyParallax(bg, -8));
-    close3?.forEach((bg) => applyParallax(bg, -4));
+    // close3?.forEach((bg) => applyParallax(bg, -4));
   } else {
     // mobile
     far1?.forEach((bg) => applyParallax(bg, 24));
     far2?.forEach((bg) => applyParallax(bg, 16));
-    far3?.forEach((bg) => applyParallax(bg, 8));
+    // far3?.forEach((bg) => applyParallax(bg, 8));
     close1?.forEach((bg) => applyParallax(bg, -24));
     close2?.forEach((bg) => applyParallax(bg, -16));
-    close3?.forEach((bg) => applyParallax(bg, -8));
+    // close3?.forEach((bg) => applyParallax(bg, -8));
   }
 };
 
