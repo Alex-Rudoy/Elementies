@@ -4,14 +4,17 @@
 
   font-size: 0.175rem;
   line-height: 0.235rem;
+  margin-top: 10rem;
 
   @media (max-width: 768px) {
     font-size: 0.09rem;
     line-height: 0.115rem;
     padding-bottom: 0.6rem;
+    margin-top: 4.25rem;
   }
 
   .sky {
+    top: -1rem;
     z-index: 0;
     background: linear-gradient(
       180deg,
@@ -134,10 +137,10 @@
     filter: blur(0.01rem);
 
     picture {
-      margin-top: -3.9rem;
+      margin-top: -4rem;
 
       @media (max-width: 768px) {
-        margin-top: -1.6rem;
+        margin-top: -1.65rem;
       }
     }
   }
@@ -498,7 +501,7 @@
     height: 11.08rem;
 
     @media (max-width: 768px) {
-      top: -1.6rem;
+      top: -1.3rem;
       right: 0;
       width: 1.04rem;
       height: 2.281rem;
@@ -541,7 +544,7 @@
     transition: transform 0.2s ease-out;
 
     @media (max-width: 768px) {
-      top: -1.39rem;
+      top: -1.09rem;
       right: 0.32rem;
       width: 0.424rem;
     }
