@@ -16,6 +16,7 @@
   .stones {
     z-index: 2;
     filter: blur(0.01rem);
+    transform: translate3d(0, 0, 0);
 
     picture {
       margin-top: 0;
@@ -29,6 +30,7 @@
   .light {
     z-index: 3;
     filter: blur(0.02rem);
+    transform: translate3d(0, 0, 0);
 
     picture {
       margin-top: 1rem;

@@ -22,6 +22,7 @@
 
   .islands {
     z-index: 2;
+    transform: translate3d(0, 0, 0);
 
     .island_1 {
       position: absolute;
@@ -80,6 +81,7 @@
 
   .clouds {
     z-index: 3;
+    transform: translate3d(0, 0, 0);
 
     picture {
       width: 100%;
@@ -92,6 +94,7 @@
 
   .platforms {
     z-index: 4;
+    transform: translate3d(0, 0, 0);
 
     .platform_1 {
       position: absolute;

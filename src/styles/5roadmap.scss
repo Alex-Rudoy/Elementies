@@ -3,6 +3,7 @@
 
   .background {
     z-index: 1;
+    transform: translate3d(0, 0, 0);
 
     @media (max-width: 768px) {
       width: 140%;
@@ -516,6 +517,7 @@
 
   .fog {
     z-index: 2;
+    transform: translate3d(0, 0, 0);
 
     picture {
       margin-top: 1.5rem;
@@ -546,6 +548,7 @@
   .bottle {
     z-index: 4;
     mix-blend-mode: lighten;
+    transform: translate3d(0, 0, 0);
 
     video,
     .thumbnail {
@@ -584,7 +587,7 @@
       height: 6rem;
       margin-top: 6rem;
       margin-left: 6.6rem;
-      // animation: 1s lightningFlashAnimation linear infinite;
+      animation: 1s lightningFlashAnimation linear infinite;
 
       @media (max-width: 768px) {
         width: 2rem;
@@ -627,12 +630,12 @@
       display: flex;
       gap: 0.365rem;
       color: #095064;
-      margin-bottom: 3.7rem;
+      margin-bottom: 3rem;
       width: min-content;
 
       @media (max-width: 768px) {
         gap: 0.03rem;
-        margin-bottom: 0.95rem;
+        margin-bottom: 0.9rem;
       }
 
       .paper {
@@ -703,7 +706,7 @@
       width: 4.1rem;
       margin-top: 7.7rem;
       margin-left: 7.5rem;
-      // animation: 1s lightningFlashAnimation linear infinite;
+      animation: 1s lightningFlashAnimation linear infinite;
 
       @media (max-width: 768px) {
         width: 1.2rem;
@@ -713,18 +716,18 @@
     }
   }
 
-  // @keyframes lightningFlashAnimation {
-  //   0% {
-  //     opacity: 0.8;
-  //     transform: translate3d(0, 0, 0);
-  //   }
-  //   50% {
-  //     opacity: 1;
-  //     transform: translate3d(0, 0, 0);
-  //   }
-  //   100% {
-  //     opacity: 0.8;
-  //     transform: translate3d(0, 0, 0);
-  //   }
-  // }
+  @keyframes lightningFlashAnimation {
+    0% {
+      opacity: 0.8;
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      opacity: 0.8;
+      transform: translate3d(0, 0, 0);
+    }
+  }
 }
